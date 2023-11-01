@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.bg-img{
+    background: url(imags/img.save.png);
+    background-position:center;
+    background-size: cover;
+    height: 70vh;
+    margin-top: 40px;
+}
+.logo{
+    /* height: 85px; */
+}
