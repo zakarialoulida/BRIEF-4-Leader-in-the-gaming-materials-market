@@ -30,15 +30,12 @@
             <div class="hidden xl:flex items-center space-x-5">
                 <a class="flex items-center hover:text-gray-200" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                        stroke="currentColor" id="panier">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                     <span class="flex absolute -mt-5 ml-4">
-                        <span
-                            class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-                        </span>
+                       
                     </span>
                 </a>
             </div>
@@ -46,14 +43,11 @@
         <!-- Responsive navbar -->
         <a class="xl:hidden flex mr-6 items-center" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+                stroke="currentColor" id="panier2">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
             <span class="flex absolute -mt-5 ml-4">
-                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-                </span>
             </span>
         </a>
         <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
@@ -63,11 +57,13 @@
             </svg>
         </a>
     </nav>
-    <div class="bg-gray-900 w-1 p-48 h-3/4 z-10	absolute right-0 top--2 hidden"></div>
+    
+    <div class="bg-gray-900 w-1 p-48 h-3/4 z-10	absolute right-0 top--2 hidden" id="panierlist"></div>
+
     <main class="bg-slate-950 flex flex-col items-center ">
         <div class="text-gray-200 flex justify-between w-3/3 mt-10 items-center md:hidden"><span>Filter By :</span>
             <div class="flex gap-3">
-                <button>All</button><button>Accessories</button><button>Consoles</button><button>Video Games</button>
+                <button class="filterall">All</button><button class="Accessoriesbutton">Accessories</button><button class="Consoles">Consoles</button><button class="Video_Games">Video Games</button>
             </div>
         </div>
         <section class=" md:text-white md:flex">
@@ -76,16 +72,16 @@
                     <h1 class="text-3xl mb-5">Filter By :</h1>
                 </div>
                 <div class="flex flex-col ml-3 mt-3 h-1/6 justify-between">
-                    <button class=" w-1/5 flex justify-items-start text-1.5xl">All</button>
-                    <button class=" w-1/5 flex justify-items-start text-1.5xl">Accessories</button>
-                    <button class=" w-1/5 flex justify-items-start text-1.5xl">Consoles</button>
-                    <button class=" w-1 flex justify-items-start text-1.5xl">Video Games</button>
+                    <button class=" w-1/5 flex justify-items-start text-1.5xl filterall" >All</button>
+                    <button class=" w-1/5 flex justify-items-start text-1.5xl Accessoriesbutton">Accessories</button>
+                    <button class=" w-1/5 flex justify-items-start text-1.5xl Consoles">Consoles</button>
+                    <button class=" w-1 flex justify-items-start text-1.5xl Video_Games">Video Games</button>
                 </div>
             </aside>
 
             <section class=" md:mt-12 md:mb-5 md:flex md:flex-col md:items-center ">
                 <section class=" flex flex-col items-center md:flex md:flex-row md:gap-10 md:mb-10" id="firstpage1">
-                    <div class="flex flex-col ">
+                    <div class="flex flex-col block Accessories  ">
                         <h2 class="text-center">Mecanique Keyboard Spartan</h2>
                         <img src="brief4 assets/keyboard1.png" alt="Keyboard" class="hover:scale-110 transition ">
                         <h2>Price : 70$</h2>
@@ -94,7 +90,7 @@
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
+                    <div class="Video_Games">
                         <h2 class="text-center">Ancient souls</h2>
                         <img src="brief4 assets/ancient souls.png" alt="video game"
                             class="mb-2  hover:scale-110 transition ">
@@ -103,7 +99,7 @@
                             <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
                         </div>
                     </div>
-                    <div>
+                    <div class="Accessories">
                         <h2 class="text-center">Mecanique Keyboard Razer</h2>
                         <img src="brief4 assets/keyboard2.png" alt="Keyboard" class=" hover:scale-110 transition ">
                         <h2> Price : 70$</h2>
@@ -114,7 +110,7 @@
                 </section>
                 <section class="flex flex-col  items-center md:flex md:flex-row  items-center :gap-10 md:mb-10"
                     id="firstpage2">
-                    <div class="">
+                    <div class="Accessories">
                         <h2 class="text-center">Gaming Chair Mach</h2>
                         <img src="brief4 assets/gaming chair.png" alt="gaming chair"
                             class=" hover:scale-110 transition ">
@@ -124,7 +120,7 @@
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
+                    <div class="Accessories">
                         <h2 class="text-center">Echo Headphones</h2>
                         <img src="brief4 assets/headphones1.jpg" alt="headphones" class=" hover:scale-110 transition ">
                         <h2>Price : 100$</h2>
@@ -133,7 +129,7 @@
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
+                    <div class="Consoles">
                         <h2 class="text-center">Wave Console</h2>
                         <img src="brief4 assets/console.png" alt="console" class=" hover:scale-110 transition ">
                         <h2>Price : 30$</h2>
@@ -144,7 +140,7 @@
                     </div>
                 </section>
                 <section class="flex flex-col md:flex md:flex-row md:gap-10 md:mb-10" id="firstpage3">
-                    <div>
+                    <div class="Accessories">
                         <h2 class="text-center">Wireless Gaming Mouse</h2>
                         <img src="brief4 assets/mouse.png" alt="Wireless Gaming Mouse"
                             class=" hover:scale-110 transition">
@@ -154,7 +150,7 @@
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
+                    <div class="filterall">
                         <h2 class="text-center">Gaming Setup</h2>
                         <img src="brief4 assets/full setup.png" alt="Gaming Setup"
                             class="mb-1  hover:scale-110 transition ">
@@ -163,7 +159,7 @@
                             <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
                         </div>
                     </div>
-                    <div>
+                    <div class="Accessories">
                         <h2 class="text-center">Razer Headphones</h2>
                         <img src="brief4 assets/headphones2.png" alt="Razer Headphones"
                             class=" hover:scale-110 transition ">
@@ -174,7 +170,7 @@
                     </div>
                 </section>
                 <section class="flex flex-col md:flex md:flex-row md:gap-10 md:mb-10" id="firstpage4">
-                    <div>
+                    <div class="Accessories">
                         <h2 class="text-center">Mach Gaming chair</h2>
                         <img src="brief4 assets/gamingchair2.jpg" alt="gaming chair"
                             class=" hover:scale-110 transition ">
@@ -273,28 +269,10 @@
                         </div>
                     </div>
                 </section>
-                <nav aria-label="Page navigation example">
-                    <ul class="inline-flex -space-x-px text-sm">
-                      <li>
-                        <a href="firstpage1" class="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
-                      </li>
-                      <li>
-                        <a href="firstpage2" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                      </li>
-                      <li>
-                        <a href="firstpage3" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                      </li>
-                      <li>
-                        <a href="firstpage4" aria-current="page" class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                      </li>
-                      <li>
-                        <a href="firstpage5" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                      </li>
-                      <li>
-                        <a href="firstpage6" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                      </li>
-                    </ul>
-                  </nav>
+                <div class="flex gap-3"><button class="bg-violet-900 px-2 py-2 rounded-xl" id="button1"
+                    >1</button><button class="bg-violet-900 px-2 py-2 rounded-xl" id="button2"
+                    >2</button><button class="bg-violet-900 px-2 py-2 rounded-xl" id="button3"
+                    >3</button><button class="bg-violet-900 px-2 py-2 rounded-xl" id="button4">4</button></div>
             </section>
         </section>
     </main>
