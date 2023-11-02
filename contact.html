@@ -63,34 +63,39 @@
     </a>
   </nav>
 
-  <section class="">
-    <h1 class="text-6xl font-bold text-center pt-20">FIND US</h1>
-    <div class="flex flex-row justify-evenly">
-      <div class="w-96 mt-20 pt-14">
-        <p class="text-2xl">NEED HELP ?<br>
-          <span class="text-4xl"> Contact us</span> <br>
+  <section class="py-20">
+    <h1 class="text-4xl md:text-6xl font-bold text-center mb-8 md:pt-20">FIND US</h1>
+    <div class="flex flex-col md:flex-row justify-evenly items-center">
+      <div class="w-full md:w-96 mt-8 md:mt-20 md:pt-14">
+        <p class="text-base md:text-2xl text-center md:text-left">
+          NEED HELP ?<br>
+          <span class="text-2xl md:text-4xl"> Contact us</span> <br>
           joygming@gmail.com <br>
           01 23 45 67 89 <br>
-          47 rue des Couronnes,75020 Paris, France
+          47 rue des Couronnes, 75020 Paris, France
         </p>
       </div>
-      <div class="rounded-2xl pb-20 pt-20"><img src="imags/map.png" alt="map" class="rounded-2xl"></div>
+      <div class="rounded-xl md:rounded-2xl p-8 md:pb-20 md:pt-20">
+        <img src="imags/map.png" alt="map" class="rounded-xl md:rounded-2xl">
+      </div>
     </div>
-    <h1 class="text-6xl font-bold text-center mb-14">CONTACT US</h1>
-    <div class="bg-indigo-800 rounded-xl w-1/2 ml-96 mb-40">
+    <h1 class="text-4xl md:text-6xl font-bold text-center mt-8 mb-8">CONTACT US</h1>
+    <div class="bg-indigo-800 rounded-xl w-full md:w-1/2 mx-4 md:mx-96 mb-8 md:mb-40">
       <form id="form" class="flex flex-col justify-evenly gap-2">
-        <label class="ml-52 mt-6">Full Name :</label>
-        <input id="name" class="w-80 h-8 text-black rounded-lg ml-52">
-        <label class="ml-52">E-mail :</label>
-        <input id="email" class="w-80 h-8 text-black rounded-lg ml-52">
-        <label class="ml-52">Phone N° :</label>
-        <input id="tel" class="w-80 h-8 text-black rounded-lg ml-52">
-        <label class="ml-52">Message :</label>
-        <input class="w-80 h-56 rounded-lg ml-52 text-black">
-        <input value="submit" type="submit" class="bg-purple-950 w-44 h-10 rounded-2xl ml-72 mb-6 cursor-pointer">
+        <label class="mt-6 md:ml-6">Full Name :</label>
+        <input id="name" class="w-50% md: h-8 text-black rounded-lg mx-4 md:ml-6">
+        <label class="md:ml-6">E-mail :</label>
+        <input id="email" class="w-50% md: h-8 text-black rounded-lg mx-4 md:ml-6">
+        <label class="md:ml-6">Phone N° :</label>
+        <input id="tel" class="w-50% md: h-8 text-black rounded-lg mx-4 md:ml-6">
+        <label class="md:ml-6">Message :</label>
+        <input class="w-50% md: h-56 rounded-lg mx-4 md:ml-6 text-black">
+        <input value="Submit" type="submit"
+          class="bg-purple-950 w-40 md: h-10 rounded-2xl ml-32 md:ml-72 mt-4 md:mb-6 cursor-pointer">
       </form>
     </div>
   </section>
+
 
   <!-- footer -->
   <footer class="bg-black dark:bg-gray-900 ">
