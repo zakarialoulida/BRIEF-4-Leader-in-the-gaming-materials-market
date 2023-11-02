@@ -19,9 +19,9 @@
             <a class="text-3xl font-bold font-heading" href="#">
                 <img class="h-[85px] logo" src="imags/logo.png" alt="logo"></a>
             <!-- Nav Links -->
-            <ul class="hidden md:flex px-10 ml-auto font-semibold font-heading space-x-12">
-                <li><a class="hover:text-gray-200" href="#">Home</a></li>
-                <li><a class="hover:text-gray-200" href="#">Products</a></li>
+            <ul class="hidden  md:flex px-10 ml-auto font-semibold font-heading space-x-12">
+                <li><a class="hover:text-gray-200" href="">Home</a></li>
+                <li><a class="hover:text-gray-200" href="product.html">Products</a></li>
                 <li><a class="hover:text-gray-200" href="#">About</a></li>
                 <li><a class="hover:text-gray-200" href="#">Contact</a></li>
             </ul>
@@ -33,29 +33,21 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
-                    <span class="flex absolute -mt-5 ml-4">
-                        <span
-                            class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-                        </span>
-                    </span>
+                    
                 </a>
             </div>
         </div>
         <!-- Responsive navbar -->
-        <a class="xl:hidden flex mr-6 items-center" href="#">
+        <a class="xl:hidden  flex mr-6 items-center" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
             <span class="flex absolute -mt-5 ml-4">
-                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-                </span>
             </span>
         </a>
-        <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+        <a class="navbar-burger self-center mr-12 md:hidden" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -77,15 +69,15 @@
     </section>
 
     <section class="overflow-hidden relative ">
-        <div class="flex items-center gap-x-20 mt-14 overflow-x-hidden mx-auto w-[960px] max-md:w-[500px]" id="scroll-container">
-            <div class="min-w-max ">
+        <div class="flex max-md:items-center items-center gap-x-20 mt-14 overflow-x-hidden mx-auto w-[960px] max-md:w-[260px]" id="scroll-container">
+            <div class="min-w-max sm:w[100px] ">
                 <h3 class="text-3xl text-yellow-50">Gaming Keyboard</h3>
                 <img class="rounded-xl" src="imags/clavier.webp" alt="">
                 <p class="text-2xl text-yellow-50">Price: 70$</p>
                 <button
                     class="bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl mb-10 py-2 px-12 rounded-xl">Add To list</button>
             </div>
-            <div class="min-w-max">
+            <div class="min-w-max max-md:min-w-max ">
                 <h3 class="text-[24px] text-yellow-50">Gaming Headphones</h3>
                 <img class="rounded-xl" src="imags/casque.webp" alt="">
                 <p class="text-2xl text-yellow-50">Price: 30$</p>
@@ -99,7 +91,7 @@
                 <button
                     class="bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl mb-10 py-2 px-12 rounded-xl">Add To list</button>
             </div>
-            <div class="min-w-max">
+            <div class="min-w-max max-md:">
                 <h3 class="text-3xl text-yellow-50">Chair Gaming</h3>
                 <img class="rounded-xl" src="imags/chair gaming.webp" alt="">
                 <p class="text-2xl text-yellow-50">Price: 120$</p>
@@ -114,13 +106,13 @@
                     class="bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl mb-10 py-2 px-12 rounded-xl">Add To list</button>
             </div>
         </div>
-        <button id="scroll-left" class="absolute left-32 top-1/2 transform -translate-y-1/2 ml-2 bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl py-2 px-4 rounded-full cursor-pointer">←</button>
-        <button id="scroll-right" class="absolute right-32 top-1/2 transform -translate-y-1/2 mr-2 bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl py-2 px-4 rounded-full cursor-pointer">→</button>
+        <button id="scroll-left" class="absolute left-0 top-1/2 transform -translate-y-1/2 ml-2 bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl py-2 px-4 rounded-full cursor-pointer">←</button>
+        <button id="scroll-right" class="absolute right-0 top-1/2 transform -translate-y-1/2 mr-2 bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl py-2 px-4 rounded-full cursor-pointer">→</button>
     </section>
     
 
     <section class="bg-img">
-        <div class="flex justify-center items-center h-[65vh]">
+        <div class="flex justify-center items-center h-[70vh]">
             <div class="text-center ">
                 <h3 class="text-6xl text-yellow-50">Save</h3>
                 <p class="text-yellow-50 text-3xl my-5">Save 20% for every 150$ spend.</p>
