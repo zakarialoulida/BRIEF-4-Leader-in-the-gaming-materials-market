@@ -30,15 +30,12 @@
             <div class="hidden xl:flex items-center space-x-5">
                 <a class="flex items-center hover:text-gray-200" href="#">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                        stroke="currentColor" id="panier">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                     <span class="flex absolute -mt-5 ml-4">
-                        <span
-                            class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-                        </span>
+                       
                     </span>
                 </a>
             </div>
@@ -46,14 +43,11 @@
         <!-- Responsive navbar -->
         <a class="xl:hidden flex mr-6 items-center" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
+                stroke="currentColor" id="panier2">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
             </svg>
             <span class="flex absolute -mt-5 ml-4">
-                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-                </span>
             </span>
         </a>
         <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
@@ -63,238 +57,219 @@
             </svg>
         </a>
     </nav>
-    <div class="bg-gray-900 w-1 p-48 h-3/4 z-10	absolute right-0 top--2 hidden"></div>
-    <main class="bg-slate-950 flex flex-col items-center ">
-        <div class="text-gray-200 flex justify-between w-3/3 mt-10 items-center md:hidden"><span>Filter By :</span>
-            <div class="flex gap-3">
-                <button>All</button><button>Accessories</button><button>Consoles</button><button>Video Games</button>
-            </div>
-        </div>
-        <section class=" md:text-white md:flex">
-            <aside class="hidden md:flex flex-col w-1/3 mt-10 ml-3 ">
-                <div class="border-b-2 w-4/5">
-                    <h1 class="text-3xl mb-5">Filter By :</h1>
-                </div>
-                <div class="flex flex-col ml-3 mt-3 h-1/6 justify-between">
-                    <button class=" w-1/5 flex justify-items-start text-1.5xl">All</button>
-                    <button class=" w-1/5 flex justify-items-start text-1.5xl">Accessories</button>
-                    <button class=" w-1/5 flex justify-items-start text-1.5xl">Consoles</button>
-                    <button class=" w-1 flex justify-items-start text-1.5xl">Video Games</button>
-                </div>
-            </aside>
+    <div class="bg-red-700  p-2 absolute top-12 right-1/4 rounded-xl md:bg-red-700  md:p-2 md:absolute md:top-12 md:right-10 md:rounded-xl"></div>
+    <!-- pannier -->
+    <div class="bg-gray-900 w-1 p-48 h-3/4 z-9	text-white absolute right-0 top--10 hidden" id="panierlist"> 
+        <img src="brief4 assets/console 3.png" alt="" class="w-30 h-12 p-48 z-10 absolute right-0" >
+    </div>
 
+    <main class="bg-slate-950 flex flex-col items-center ">
+        <div class="py-5 flex flex-col w-3/4 border-b-2">
+            <h1 class="text-3xl   text-white">Filter By :</h1>
+        </div>
+        <div class="flex flex-row  mb-5 h-8 justify-between text-white w-3/4 gap-3 mt-6">
+            <button class=" w-1/ flex text-1.5xl" id="filterall" >All</button>
+            <button class=" w-1/ flex text-1.5xl" id="Accessoriesbutton">Accessories</button>
+            <button class=" w-1/ flex text-1.5xl" id="Consoles" >Consoles</button>
+            <button class=" w-1/ flex text-1.5xl"  id="Video_Games">Video Games</button>
+            <button class=" w-1/ flex  text-1.5xl"  id="full_setup">full setup</button>
+        </div>
+        <section class="text-white md:flex ">
             <section class=" md:mt-12 md:mb-5 md:flex md:flex-col md:items-center ">
                 <section class=" flex flex-col items-center md:flex md:flex-row md:gap-10 md:mb-10" id="firstpage1">
-                    <div class="flex flex-col ">
-                        <h2 class="text-center">Mecanique Keyboard Spartan</h2>
+                    <div class="flex flex-col block Accessories ">
+                        <h2 class="text-center z-9">Mecanique Keyboard Spartan</h2>
                         <img src="brief4 assets/keyboard1.png" alt="Keyboard" class="hover:scale-110 transition ">
                         <h2>Price : 70$</h2>
                         <div class="flex justify-between">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro1btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Ancient souls</h2>
+                    <div class="block Video_Games">
+                        <h2 class="text-center z-10">Ancient souls</h2>
                         <img src="brief4 assets/ancient souls.png" alt="video game"
                             class="mb-2  hover:scale-110 transition ">
                         <h2>Price : 45$</h2>
                         <div class="flex items-center">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro2btn">Add to List</button>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Mecanique Keyboard Razer</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Mecanique Keyboard Razer</h2>
                         <img src="brief4 assets/keyboard2.png" alt="Keyboard" class=" hover:scale-110 transition ">
                         <h2> Price : 70$</h2>
                         <div>
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro3btn">Add to List</button>
                         </div>
                     </div>
                 </section>
-                <section class="flex flex-col  items-center md:flex md:flex-row  items-center :gap-10 md:mb-10"
+                <section class="flex flex-col  items-center md:flex md:flex-row  md:items-center md:gap-10 md:mb-10"
                     id="firstpage2">
-                    <div class="">
-                        <h2 class="text-center">Gaming Chair Mach</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Gaming Chair Mach</h2>
                         <img src="brief4 assets/gaming chair.png" alt="gaming chair"
                             class=" hover:scale-110 transition ">
                         <h2>Price : 200$</h2>
                         <div class="flex justify-between">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro4btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Echo Headphones</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Echo Headphones</h2>
                         <img src="brief4 assets/headphones1.jpg" alt="headphones" class=" hover:scale-110 transition ">
                         <h2>Price : 100$</h2>
                         <div class="flex justify-between">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro5btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Wave Console</h2>
+                    <div class="block console">
+                        <h2 class="text-center z-10">Wave Console</h2>
                         <img src="brief4 assets/console.png" alt="console" class=" hover:scale-110 transition ">
                         <h2>Price : 30$</h2>
                         <div class="flex justify-between mt-1">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro6btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
                 </section>
                 <section class="flex flex-col md:flex md:flex-row md:gap-10 md:mb-10" id="firstpage3">
-                    <div>
-                        <h2 class="text-center">Wireless Gaming Mouse</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Wireless Gaming Mouse</h2>
                         <img src="brief4 assets/mouse.png" alt="Wireless Gaming Mouse"
                             class=" hover:scale-110 transition">
                         <h2> 75$ original price /65$ Promotion</h2>
                         <div class="flex justify-between mt-1">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro7btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Gaming Setup</h2>
+                    <div class="block fullsetup">
+                        <h2 class="text-center z-10">Gaming Setup</h2>
                         <img src="brief4 assets/full setup.png" alt="Gaming Setup"
                             class="mb-1  hover:scale-110 transition ">
                         <h2 class="mb-1">Price : 1050$</h2>
                         <div class="flex items-center">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro8btn">Add to List</button>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Razer Headphones</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Razer Headphones</h2>
                         <img src="brief4 assets/headphones2.png" alt="Razer Headphones"
                             class=" hover:scale-110 transition ">
                         <h2>Price : 70$</h2>
                         <div>
-                            <button class="bg-violet-900 p-1 rounded-xl mt-2">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl mt-2 addbutton" id="pro9btn">Add to List</button>
+                            <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
                 </section>
-                <section class="flex flex-col md:flex md:flex-row md:gap-10 md:mb-10" id="firstpage4">
-                    <div>
-                        <h2 class="text-center">Mach Gaming chair</h2>
+                <section class="flex flex-col md:flex md:flex-row md:w-full md:justify-between md:mb-10" id="firstpage4">
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Mach Gaming chair</h2>
                         <img src="brief4 assets/gamingchair2.jpg" alt="gaming chair"
                             class=" hover:scale-110 transition ">
                         <h2>Price : 200$</h2>
                         <div class="flex justify-between">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro10btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">TUFF Gaming Monitor 120Hz</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">TUFF Gaming Monitor 120Hz</h2>
                         <img src="brief4 assets/monitor2.jpg" alt="Gaming Monitor" class=" hover:scale-110 transition ">
                         <h2>Price : 300$</h2>
                         <div class="flex justify-between">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro11btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Nvidia Gtx1080ti</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Nvidia Gtx1080ti</h2>
                         <img src="brief4 assets/graphiccard 1.png" alt="graphiccard"
                             class=" hover:scale-110 transition ">
                         <h2>Price : 400$</h2>
                         <div class="flex justify-between">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro12btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
                 </section>
                 <section class="flex flex-col md:flex md:flex-row md:gap-10 md:mb-10" id="firstpage5">
-                    <div>
-                        <h2 class="text-center">Semi-mecanique Keyboard Zoei</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Semi-mecanique Keyboard Zoei</h2>
                         <img src="brief4 assets/keyboard5 1.png" alt="Keyboard" class=" hover:scale-110 transition ">
                         <h2> 105$ original price /80$ Promotion</h2>
                         <div class="flex justify-between mt-2">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro13btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Playstation 5</h2>
+                    <div class="block console">
+                        <h2 class="text-center z-10">Playstation 5</h2>
                         <img src="brief4 assets/console 3.png" alt="Playstation 5"
                             class="mb-2  hover:scale-110 transition ">
                         <h2>Price : 900$</h2>
                         <div class="flex items-center">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro14btn">Add to List</button>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Kingdom come: Delivarnce</h2>
+                    <div class="block Video_Games">
+                        <h2 class="text-center z-10">Kingdom come: Delivarnce</h2>
                         <img src="brief4 assets/videogame3 1.png" alt="video game" class=" hover:scale-110 transition ">
                         <h2> 30$ original price /12$ Promotion</h2>
                         <div class="mt-2">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro15btn">Add to List</button>
                         </div>
                     </div>
                 </section>
                 <section class="flex flex-col md:flex md:flex-row md:gap-10 md:mb-10" id="firstpage6">
-                    <div>
-                        <h2 class="text-center">Full Gaming Setup</h2>
+                    <div class="block fullsetup">
+                        <h2 class="text-center z-10">Full Gaming Setup</h2>
                         <img src="brief4 assets/setup2 1.png" alt="full setup" class=" hover:scale-110 transition ">
                         <h2>Price : 1500$</h2>
                         <div class="flex justify-between mt-1">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro16btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
-                    <div>
-                        <h2 class="text-center">Half Life 3</h2>
+                    <div class="block Video_Games">
+                        <h2 class="text-center z-10">Half Life 3</h2>
                         <img src="brief4 assets/halflife.png" alt="video game" class=" hover:scale-110 transition ">
                         <h2 class="bg-violet-900 text-center rounded-xl mt-6 p-2">coming soon</h2>
                     </div>
-                    <div>
-                        <h2 class="text-center">Mecanique Keyboard</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Mecanique Keyboard</h2>
                         <img src="brief4 assets/keyboard4 1.png" alt="keyboard" class=" hover:scale-110 transition ">
                         <h2>Price : 90$</h2>
                         <div class="flex justify-between mt-1">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro17btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
                 </section>
                 <section class="flex flex-col md:flex md:flex-row md:gap-10 md:mb-10" id="firstpage7">
-                    <div>
-                        <h2 class="text-center">Grand theft Auto 6</h2>
+                    <div class="block Video_Games">
+                        <h2 class="text-center z-10">Grand theft Auto 6</h2>
                         <img src="brief4 assets/videogame 4.png" alt="videogame" class=" hover:scale-110 transition ">
                         <h2 class="bg-violet-900 text-center rounded-xl mt-6 p-2">coming soon</h2>
                     </div>
-                    <div>
-                        <h2 class="text-center">Amd RX 6800</h2>
+                    <div class="block Accessories">
+                        <h2 class="text-center z-10">Amd RX 6800</h2>
                         <img src="brief4 assets/amd 1.png" alt="graphic card" class="mb-2  hover:scale-110 transition ">
                         <h2>Price : 450$</h2>
                         <div class="flex justify-between">
-                            <button class="bg-violet-900 p-1 rounded-xl">Add to List</button>
+                            <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro18btn">Add to List</button>
                             <a href="" class="bg-violet-900 p-1 rounded-xl">Customize</a>
                         </div>
                     </div>
                 </section>
-                <nav aria-label="Page navigation example">
-                    <ul class="inline-flex -space-x-px text-sm">
-                      <li>
-                        <a href="firstpage1" class="flex items-center justify-center px-3 h-8 ml-0 leading-tight text-gray-500 bg-white border border-gray-300 rounded-l-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
-                      </li>
-                      <li>
-                        <a href="firstpage2" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                      </li>
-                      <li>
-                        <a href="firstpage3" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                      </li>
-                      <li>
-                        <a href="firstpage4" aria-current="page" class="flex items-center justify-center px-3 h-8 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                      </li>
-                      <li>
-                        <a href="firstpage5" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                      </li>
-                      <li>
-                        <a href="firstpage6" class="flex items-center justify-center px-3 h-8 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                      </li>
-                    </ul>
-                  </nav>
+                <div class="flex gap-3"><button class="bg-violet-900 px-3 py-2 rounded-xl" id="button1"
+                    >1</button><button class="bg-violet-900 px-3 py-2 rounded-xl" id="button2"
+                    >2</button><button class="bg-violet-900 px-3 py-2 rounded-xl" id="button3"
+                    >3</button><button class="bg-violet-900 px-3 py-2 rounded-xl" id="button4">4</button></div>
             </section>
         </section>
     </main>
