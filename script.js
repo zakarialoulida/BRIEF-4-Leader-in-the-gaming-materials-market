@@ -1,8 +1,20 @@
+// menu
+document.addEventListener("DOMContentLoaded", function() {
+    const burgerMenu = document.getElementById("burger-menu");
+    const navLinks = document.getElementById("nav-links");
+
+    burgerMenu.addEventListener("click", function() {
+        navLinks.classList.toggle("hidden");
+    });
+});
+
+
+
 const scrollContainer = document.getElementById("scroll-container");
 const scrollLeftButton = document.getElementById("scroll-left");
 const scrollRightButton = document.getElementById("scroll-right");
 
-
+const contentWidth = scrollContainer.scrollWidth;
 
 scrollLeftButton.addEventListener("click", () => {
     scrollContainer.scrollLeft -= 400; 
@@ -11,5 +23,6 @@ scrollLeftButton.addEventListener("click", () => {
 scrollRightButton.addEventListener("click", () => {
     scrollContainer.scrollLeft += 400; 
 });
+
 
 
