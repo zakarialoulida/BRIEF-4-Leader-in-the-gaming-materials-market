@@ -9,7 +9,12 @@ faq.forEach((faq) => {
       answer.style.display = 'block';
     }
   })
+<<<<<<< HEAD
 })
+=======
+
+
+>>>>>>> 10db516d0dfc8eb2c563934a7e08f412402d4fcb
 
 
 const faqItems = document.querySelectorAll(".faq-item");
@@ -28,3 +33,9 @@ faqItems.forEach((item) => {
     }
   });
 });
+<<<<<<< HEAD
+=======
+
+})
+
+>>>>>>> 10db516d0dfc8eb2c563934a7e08f412402d4fcb
