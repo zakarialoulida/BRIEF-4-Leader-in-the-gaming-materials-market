@@ -20,10 +20,10 @@
         <img class="h-12" src="imags/logo.png" alt="logo"></a>
       <!-- Nav Links -->
       <ul class="hidden md:flex px-10 ml-auto font-semibold font-heading space-x-12">
-        <li><a class="hover:text-gray-200" href="#">Home</a></li>
+        <li><a class="hover:text-gray-200" href="indexHtml">Home</a></li>
         <li><a class="hover:text-gray-200" href="#">Products</a></li>
-        <li><a class="hover:text-gray-200" href="#">About</a></li>
-        <li><a class="hover:text-gray-200" href="#">Contact</a></li>
+        <li><a class="hover:text-gray-200" href="about.html">About</a></li>
+        <li><a class="hover:text-gray-200" href="contact.html">Contact</a></li>
       </ul>
 
       <!-- Header Icons -->
@@ -99,30 +99,50 @@
     </div>
   </section>
 
-  <!-- faq -->
-  <section class="bg-[url('imags/bg4.jpg')] bg-cover bg-center pt-20 pb-10">
-    <h2 class="text-4xl md:text-6xl font-bold text-center">FAQ</h2>
-    <div class="flex flex-col justify-center items-center gap-4 md:gap-8">
-      <div class="w-full md:w-80 h-12 md:h-14">
-        <h4 class="text-center cursor-pointer">How do I add a new question & answer?<i
+  <section class="bg-cover bg-center bg-no-repeat bg-fixed py-20 md:py-32"
+    style="background-image: url('imags/bg4.jpg');">
+    <h2 class="text-4xl md:text-6xl font-bold text-center text-white">FAQ</h2>
+    <div class="flex flex-col items-center mt-8 space-y-8 md:space-y-12">
+      <div
+        class="faq-item w-full md:w-80 bg-white rounded-lg shadow-md cursor-pointer transition-transform hover:transform hover:scale-105">
+        <h4 class="text-center py-2 text-black" data-faq="1">How do I add a new question & answer? <i
             class="fa-solid fa-chevron-down"></i></h4>
-        <p class="text-center hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut. Sapiente,
-          consectetur.</p>
+        <p class="text-center hidden text-gray-700 py-2" data-answer="1">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Magni, ut. Sapiente, consectetur.</p>
       </div>
-      <div class="w-full md:w-80 h-12 md:h-14">
-        <h4 class="text-center cursor-pointer">How do I add a new question & answer?<i
+      <div
+        class="faq-item w-full md:w-80 bg-white rounded-lg shadow-md cursor-pointer transition-transform hover:transform hover:scale-105">
+        <h4 class="text-center py-2 text-black" data-faq="2">How do I add a new question & answer? <i
             class="fa-solid fa-chevron-down"></i></h4>
-        <p class="text-center hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut. Sapiente,
-          consectetur.</p>
+        <p class="text-center hidden text-gray-700 py-2" data-answer="2">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Magni, ut. Sapiente, consectetur.</p>
       </div>
-      <div class="w-full md:w-80 h-12 md:h-14 mb-8 md:mb-24">
-        <h4 class="text-center cursor-pointer">How do I add a new question & answer?<i
+      <div
+        class="faq-item w-full md:w-80 bg-white rounded-lg shadow-md cursor-pointer transition-transform hover:transform hover:scale-105">
+        <h4 class="text-center py-2 text-black" data-faq="3">How do I add a new question & answer? <i
             class="fa-solid fa-chevron-down"></i></h4>
-        <p class="text-center hidden pb-20 md:pb-28">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut.
-          Sapiente, consectetur.</p>
+        <p class="text-center hidden text-gray-700 py-2" data-answer="3">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Magni, ut. Sapiente, consectetur.</p>
       </div>
     </div>
   </section>
+
+
+  <style>
+    .faq-item+.faq-item .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+    }
+
+    .faq-item.active+.faq-item .faq-answer {
+      max-height: 1000px;
+    }
+  </style>
+
+
+
+
 
 
   <!-- footer -->
@@ -161,6 +181,12 @@
   </footer>
 
   <script src="js/reajicts.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script>
+
+  </script>
+
+
 </body>
 
 </html>
