@@ -225,9 +225,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 let data = JSON.stringify(arrayToStore)
                 localStorage.setItem("items", data)
             }
-            putList()
+            
         });
-       
+        putList()
     }
     /****/
  
