@@ -14,54 +14,45 @@
 <body class="text-white overflow-x-hidden bg-[url('imags/bg2.jpg')] bg-cover bg-center">
 
   <!-- navbar -->
-  <nav class="flex justify-between bg-gray-900 text-white w-screen">
-    <div class="xl:px-11 py-5 flex w-full items-center">
-      <a class="text-3xl font-bold font-heading" href="#">
-        <img class="h-12" src="imags/logo.png" alt="logo"></a>
-      <!-- Nav Links -->
-      <ul class="hidden md:flex px-10 ml-auto font-semibold font-heading space-x-12">
-        <li><a class="hover:text-gray-200" href="#">Home</a></li>
-        <li><a class="hover:text-gray-200" href="#">Products</a></li>
-        <li><a class="hover:text-gray-200" href="#">About</a></li>
-        <li><a class="hover:text-gray-200" href="#">Contact</a></li>
-      </ul>
-
-      <!-- Header Icons -->
-      <div class="hidden xl:flex items-center space-x-5">
-        <a class="flex items-center hover:text-gray-200" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-          </svg>
-          <span class="flex absolute -mt-5 ml-4">
-            <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-            </span>
-          </span>
-        </a>
-      </div>
+  <nav class="flex justify-between bg-gray-900 text-white w-full">
+    <div class="xl:px-11  flex w-full items-center">
+        <a class="text-3xl font-bold font-heading" href="#">
+            <img class="h-[85px] logo" src="imags/logo.png" alt="logo"></a>
+        <!-- Nav Links -->
+        <ul class=" md:flex px-10 ml-auto font-semibold font-heading space-x-12 max-md:gap-80 max-md:absolute max-md:right-0 max-md:top-[84px] max-md:bg-gray-950 max-md:h-[400px] max-md:w-[200px]" id="nav-links">
+            <li class="max-md:my-8"><a class="hover:text-gray-200 max-md:ml-[50px] " href="index.html">Home</a></li>
+            <li class="max-md:my-8"><a class="hover:text-gray-200" href="products.html">Products</a></li>
+            <li class="max-md:my-8"><a class="hover:text-gray-200" href="about.html">About</a></li>
+            <li><a class="hover:text-gray-200" href="contact.html">Contact</a></li>
+        </ul>
+        
+        <!-- Header Icons -->
+        <div class="hidden xl:flex items-center space-x-5">
+            <a class="flex items-center hover:text-gray-200" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                
+            </a>
+        </div>
     </div>
-
     <!-- Responsive navbar -->
-    <a class="xl:hidden flex mr-6 items-center" href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-      </svg>
-      <span class="flex absolute -mt-5 ml-4">
-        <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
-        </span>
-      </span>
+    <a class="xl:hidden  flex mr-6 items-center" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+        </svg>
     </a>
-    <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
-        stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+    <a class="md:hidden flex items-center cursor-pointer" id="burger-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
     </a>
-  </nav>
+</nav>
+
 
   <section class="py-20">
     <h1 class="text-4xl md:text-6xl font-bold text-center mb-8 md:pt-20">FIND US</h1>
@@ -76,7 +67,10 @@
         </p>
       </div>
       <div class="rounded-xl md:rounded-2xl p-8 md:pb-20 md:pt-20">
-        <img src="imags/map.png" alt="map" class="rounded-xl md:rounded-2xl">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3648515664518!2d2.382376076358419!3d48.87032087133375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66de950b51cf1%3A0xef48ed13a44a359c!2s47%20Rue%20des%20Couronnes%2C%2075020%20Paris%2C%20France!5e0!3m2!1sen!2sma!4v1698930631766!5m2!1sen!2sma"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class="rounded-xl"></iframe>
       </div>
     </div>
     <h1 class="text-4xl md:text-6xl font-bold text-center mt-8 mb-8">CONTACT US</h1>
@@ -89,12 +83,57 @@
         <label class="md:ml-6">Phone N° :</label>
         <input id="tel" class="w-50% md: h-8 text-black rounded-lg mx-4 md:ml-6">
         <label class="md:ml-6">Message :</label>
-        <input class="w-50% md: h-56 rounded-lg mx-4 md:ml-6 text-black">
+        <input class="w-50% pb-72 rounded-lg mx-4 md:ml-6 text-black">
         <input value="Submit" type="submit"
           class="bg-purple-950 w-40 md: m-auto h-10 rounded-2xl ml-32 md:ml-72 mt-4 md:mb-6 cursor-pointer">
       </form>
     </div>
   </section>
+
+  <section class="bg-cover bg-center bg-no-repeat bg-fixed py-20 md:py-32"
+    style="background-image: url('imags/bg4.jpg');">
+    <h2 class="text-4xl md:text-6xl font-bold text-center text-white">FAQ</h2>
+    <div class="flex flex-col items-center mt-8 space-y-8 md:space-y-12">
+      <div
+        class="faq-item w-full md:w-80 bg-white rounded-lg shadow-md cursor-pointer transition-transform hover:transform hover:scale-105">
+        <h4 class="text-center py-2 text-black" data-faq="1">How do I add a new question & answer? <i
+            class="fa-solid fa-chevron-down"></i></h4>
+        <p class="text-center hidden text-gray-700 py-2" data-answer="1">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Magni, ut. Sapiente, consectetur.</p>
+      </div>
+      <div
+        class="faq-item w-full md:w-80 bg-white rounded-lg shadow-md cursor-pointer transition-transform hover:transform hover:scale-105">
+        <h4 class="text-center py-2 text-black" data-faq="2">How do I add a new question & answer? <i
+            class="fa-solid fa-chevron-down"></i></h4>
+        <p class="text-center hidden text-gray-700 py-2" data-answer="2">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Magni, ut. Sapiente, consectetur.</p>
+      </div>
+      <div
+        class="faq-item w-full md:w-80 bg-white rounded-lg shadow-md cursor-pointer transition-transform hover:transform hover:scale-105">
+        <h4 class="text-center py-2 text-black" data-faq="3">How do I add a new question & answer? <i
+            class="fa-solid fa-chevron-down"></i></h4>
+        <p class="text-center hidden text-gray-700 py-2" data-answer="3">Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Magni, ut. Sapiente, consectetur.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <style>
+    .faq-item+.faq-item .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+    }
+
+    .faq-item.active+.faq-item .faq-answer {
+      max-height: 1000px;
+    }
+  </style>
+
+
+
+
 
 
   <!-- footer -->
@@ -133,6 +172,9 @@
   </footer>
 
   <script src="js/reajicts.js" defer></script>
+  <script src="js/script.js" defer></script>
+
+
 </body>
 
 </html>

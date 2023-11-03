@@ -11,7 +11,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body class="bg-black">
     <!-- navbar -->
     <nav class="flex justify-between bg-gray-900 text-white w-full">
@@ -20,10 +19,10 @@
                 <img class="h-[85px] logo" src="imags/logo.png" alt="logo"></a>
             <!-- Nav Links -->
             <ul class=" md:flex px-10 ml-auto font-semibold font-heading space-x-12 max-md:gap-80 max-md:absolute max-md:right-0 max-md:top-[84px] max-md:bg-gray-950 max-md:h-[400px] max-md:w-[200px]" id="nav-links">
-                <li class="max-md:my-8"><a class="hover:text-gray-200 max-md:ml-[50px] " href="">Home</a></li>
-                <li class="max-md:my-8"><a class="hover:text-gray-200" href="product.html">Products</a></li>
-                <li class="max-md:my-8"><a class="hover:text-gray-200" href="#">About</a></li>
-                <li><a class="hover:text-gray-200" href="#">Contact</a></li>
+                <li class="max-md:my-8"><a class="hover:text-gray-200 max-md:ml-[50px] " href="#">Home</a></li>
+                <li class="max-md:my-8"><a class="hover:text-gray-200" href="products.html">Products</a></li>
+                <li class="max-md:my-8"><a class="hover:text-gray-200" href="about.html">About</a></li>
+                <li><a class="hover:text-gray-200" href="contact.html">Contact</a></li>
             </ul>
             
             <!-- Header Icons -->
@@ -51,8 +50,11 @@
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
         </a>
-        
+
     </nav>
+
+    
+    
 
     <section style="background-image: url(imags/img.home.png);" class="bg-cover bg-center w-full  h-[89vh]">
         <div class="p-20">
@@ -60,9 +62,9 @@
                 <h1 class="text-yellow-50 my-5 md:my-10 text-3xl md:text-5xl">Welcome to Joy Gaming</h1>
                 <p class="text-yellow-50 my-5 md:my-10">At Joy Gaming, we're your top choice for games and gaming gear.
                     Discover a vast game selection and top-notch equipment, all under one roof.</p>
-                <button
+                <a href="products.html"><button
                     class="bg-yellow-50 hover:bg-fuchsia-100 text-fuchsia-900 font-bold text-xl md:text-2xl mb-10 py-2 px-5 rounded-xl">Shop
-                    Now</button>
+                    Now</button></a>
             </div>
         </div>
     </section>
@@ -115,9 +117,9 @@
             <div class="text-center ">
                 <h3 class="text-6xl text-yellow-50">Save</h3>
                 <p class="text-yellow-50 text-3xl my-5">Save 20% for every 150$ spend.</p>
-                <button
+                <a href="products.html"><button
                     class="bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl mb-10 py-2 px-12 rounded-xl">Buy
-                </button>
+                </button></a>
             </div>
         </div>
     </section>
@@ -145,13 +147,13 @@
                 <P class="text-yellow-50 my-5 md:my-10 text-xl">Subribe to find out about <br>new products and special
                     offers.</P>
                 <p class="text-yellow-50 my-5 md:my-10">E-mail*</p>
-                <!-- <input class="block w-96 bg-yellow-50 h-12 rounded-l-xl border-solid t"> -->
+                <input class="block w-[400px] bg-transparent h-12 rounded-l-xl border-solid border-4 border-yellow-50">
                 <button
                     class="bg-yellow-50 hover:bg-fuchsia-100 text-fuchsia-900 font-bold text-xl  mb-10 py-2 px-44 rounded-xl">Send</button>
             </div>
         </div>
     </section>
-    <img src="imags/img.games.png" alt="">
+    <img src="imags/img.games.png" alt="img">
 
     <footer class="bg-black dark:bg-gray-900">
         <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
