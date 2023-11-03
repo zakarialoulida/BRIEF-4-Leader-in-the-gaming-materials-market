@@ -27,13 +27,6 @@
         <li><a class="hover:text-gray-200" href="#">About</a></li>
         <li><a class="hover:text-gray-200" href="#">Contact</a></li>
       </ul>
-      <!-- Nav Links -->
-      <ul class="hidden md:flex px-10 ml-auto font-semibold font-heading space-x-12">
-        <li><a class="hover:text-gray-200" href="#">Home</a></li>
-        <li><a class="hover:text-gray-200" href="#">Products</a></li>
-        <li><a class="hover:text-gray-200" href="#">About</a></li>
-        <li><a class="hover:text-gray-200" href="#">Contact</a></li>
-      </ul>
       <!-- Header Icons -->
       <div class="hidden xl:flex items-center space-x-5">
         <a class="flex items-center hover:text-gray-200" href="#">
@@ -86,30 +79,65 @@
     </div>
   </section>
 
-  <!-- faq -->
-  <section class="bg-[url('imags/bg4.jpg')] bg-cover bg-center pt-20 pb-10">
-    <h2 class="text-4xl md:text-6xl font-bold text-center">FAQ</h2>
-    <div class="flex flex-col justify-center items-center gap-4 md:gap-8">
-      <div class="w-full md:w-80 h-12 md:h-14">
-        <h4 class="text-center cursor-pointer">How do I add a new question & answer?<i
-            class="fa-solid fa-chevron-down"></i></h4>
-        <p class="text-center hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut. Sapiente,
-          consectetur.</p>
-      </div>
-      <div class="w-full md:w-80 h-12 md:h-14">
-        <h4 class="text-center cursor-pointer">How do I add a new question & answer?<i
-            class="fa-solid fa-chevron-down"></i></h4>
-        <p class="text-center hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut. Sapiente,
-          consectetur.</p>
-      </div>
-      <div class="w-full md:w-80 h-12 md:h-14 mb-8 md:mb-24">
-        <h4 class="text-center cursor-pointer">How do I add a new question & answer?<i
-            class="fa-solid fa-chevron-down"></i></h4>
-        <p class="text-center hidden pb-20 md:pb-28">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut.
-          Sapiente, consectetur.</p>
+  <section>
+    <div class="bg-gray-100 py-10">
+      <div class="container mx-auto">
+        <h2 class="text-3xl text-black font-semibold text-center mb-6">GALLERY</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Image 1 -->
+          <div class="group relative">
+            <img src="imags/galrie1.jpg" alt="Image 1" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 hidden group-hover:opacity-75 bg-black transition-opacity"></div>
+            <div
+              class="absolute inset-0 flex items-center justify-center hidden group-hover:flex bg-black bg-opacity-50 transition-opacity">
+              <a href="imags/galrie1.jpg" class="text-white text-2xl" data-lightbox="gallery">
+                <i class="far fa-image"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image 2 -->
+          <div class="group relative">
+            <img src="imags/galerie2.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 hidden group-hover:opacity-75 bg-black transition-opacity"></div>
+            <div
+              class="absolute inset-0 flex items-center justify-center hidden group-hover:flex bg-black bg-opacity-50 transition-opacity">
+              <a href="imags/galerie2.jpg" class="text-white text-2xl" data-lightbox="gallery">
+                <i class="far fa-image"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image 3 -->
+          <div class="group relative">
+            <img src="imags/galerie3.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 hidden group-hover:opacity-75 bg-black transition-opacity"></div>
+            <div
+              class="absolute inset-0 flex items-center justify-center hidden group-hover:flex bg-black bg-opacity-50 transition-opacity">
+              <a href="imags/galerie3.jpg" class="text-white text-2xl" data-lightbox="gallery">
+                <i class="far fa-image"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image 4 -->
+          <div class="group relative">
+            <img src="imags/galrie4.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 hidden group-hover:opacity-75 bg-black transition-opacity"></div>
+            <div
+              class="absolute inset-0 flex items-center justify-center hidden group-hover:flex bg-black bg-opacity-50 transition-opacity">
+              <a href="imags/galrie4.jpg" class="text-white text-2xl" data-lightbox="gallery">
+                <i class="far fa-image"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
   </section>
+
 
   <!-- footer -->
   <footer class="bg-black dark:bg-gray-900 ">
