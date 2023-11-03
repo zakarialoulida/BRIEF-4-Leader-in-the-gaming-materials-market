@@ -9,7 +9,8 @@ faq.forEach((faq) => {
       answer.style.display = 'block';
     }
   })
-})
+
+
 
 
 const faqItems = document.querySelectorAll(".faq-item");
@@ -28,3 +29,6 @@ faqItems.forEach((item) => {
     }
   });
 });
+
+})
+

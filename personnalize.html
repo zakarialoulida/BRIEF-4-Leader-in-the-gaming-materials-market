@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class=" bg-black">
+    <!-- navbar -->
+    <nav class="flex justify-between bg-gray-900 text-white w-full">
+        <div class="xl:px-11 py-5 flex w-full items-center">
+            <a class="text-3xl font-bold font-heading" href="#">
+                <img class="h-12" src="imags/logo.png" alt="logo"></a>
+            <!-- Nav Links -->
+            <ul class="hidden md:flex px-10 ml-auto font-semibold font-heading space-x-12">
+                <li><a class="hover:text-gray-200" href="#">Home</a></li>
+                <li><a class="hover:text-gray-200" href="#">Products</a></li>
+                <li><a class="hover:text-gray-200" href="#">About</a></li>
+                <li><a class="hover:text-gray-200" href="#">Contact</a></li>
+            </ul>
+            <!-- Header Icons -->
+            <div class="hidden xl:flex items-center space-x-5">
+                <a class="flex items-center hover:text-gray-200" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span class="flex absolute -mt-5 ml-4">
+                        <span
+                            class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!-- Responsive navbar -->
+        <a class="xl:hidden flex mr-6 items-center" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            <span class="flex absolute -mt-5 ml-4">
+                <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-pink-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-pink-500">
+                </span>
+            </span>
+        </a>
+        <a class="navbar-burger self-center mr-12 xl:hidden" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </a>
+    </nav>
+    <section class="m-10  flex justify-evenly gap- flex-wrap  ">
+        <div class=" w-3/6 flex flex-col items-center gap-7  ">
+
+            <img class=" mt-4 mb-8 w-96 flex justify-center " src="imags/ordiimg.png" alt="">
+            <div class=" flex flex-col items center  gap-5 flex-wrap ">
+                <div class=" w-96 ">
+                    <h4 class=" text-gray-50 underline">DETAILS</h4>
+                    <p class=" w-96 text-gray-50">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus
+                        optio
+                        quia
+                        corporis ipsum at, cum similique laudantium debitis cumque dolor, dolorem est consequuntur
+                        voluptates
+                        magni. Necessitatibus provident hic velit omnis.</p>
+                </div>
+                <ul class=" ml-7 w-60 text-gray-50 list-disc">
+                    <li>
+                        <p>sdfffffffffffefzzzsd</p>
+                    </li>
+                    <li>
+                        <p>sefffffffffffffreefs</p>
+                    </li>
+                    <li>
+                        <p>esfresdddddddddsffes</p>
+                    </li>
+                    <li>
+                        <p>esesfeeseeeresfders</p>
+                    </li>
+                    <li>
+                        <p>dzzzzzzefrgsfdtrgf</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class=" text-gray-50  lg:w-2/5 w-96 mt-7 flex flex-col ite gap-4 text-center border-2 border-white rounded ">
+            <h2 class=" w place-content-center font-bold text-">MSI GF75 Thin 10SCXR-215FR</h2>
+            <div class=" border-2 border-purple-800 inline">
+                <h2>PRICE: 2155 $</h2>
+            </div>
+            <h4 class="underline"> COSTUMIZE YOUR PRODUCTS .</h4>
+
+            <h5 class="underline">COLOR</h5>
+            <div class="  flex justify-around  ">
+                <div>
+                    <label for="silver" class="border-2 border-white rounded px-2 h-8 w-16 :hover">Silver</label>
+                    <input type="radio" name="color" id="silver" value="10">
+                </div>
+                <div>
+                    <label for="white">White</label>
+                    <input type="radio" name="color" id="white" value="20">
+                </div>
+                <div>
+                    <label for="black">Black</label>
+                    <input type="radio" name="color" id="black" value="30">
+                </div>
+            </div>
+            <h5 class="underline">STORAGE MEMORY</h5>
+            <div class="  flex justify-around  ">
+                <div>
+                    <label for="hdd">HDD</label>
+                    <input type="radio" name="storage" id="hdd" value="10">
+                </div>
+                <div>
+                    <label for="ssd">SSD</label>
+                    <input type="radio" name="storage" id="ssd" value="50">
+                </div>
+            </div>
+            <select class="p-2 rounded text-black max-w-fit mx-auto" id="optionstorage">
+                <option value="0" selected disabled hidden>CHOOSE YOUR STORAGE MEMORY</option>
+                <option value="250">250gb</option>
+                <option value="500">500gb</option>
+                <option value="1000">1tb</option>
+                <option value="2000">2tb</option>
+                <option value="3000">3tb</option>
+            </select>
+            <h5 class="underline">CARTE GRAPHIQUE</h5>
+            <div class="  flex justify-around  ">
+                <button id="NVIDIA-button" class="border-2 border-white rounded h-8 w-16" data-price="0">NVIDIA</button>
+                <button id="AMD-button" class="border-2 border-white rounded h-8 w-16" data-price="50">AMD</button>
+                <button id="INTEL-button" class="border-2 border-white rounded h-8 w-16" data-price="100">INTEL</button>
+            </div>
+
+            <select class="text-black max-w-fit mx-auto p-2 rounded" id="cartenvidia">
+                <option value="0" selected disabled hidden>CHOOSE YOUR CARTE</option>
+                <option value="4090">RTX 4090</option>
+                <option value="4070"> RTX 4070</option>
+                <option value="4060"> GeForce RTX 4060</option>
+                <option value="4080">GeForce RTX 4080</option>
+                <option value="4065">RTX 4060 Ti</option>
+            </select>
+
+            <form class="text-black">
+                <select class="p-2 rounded" id="carteamd">
+                    <option value="0" selected disabled hidden>CHOOSE YOUR CARTE</option>
+                    <option value="7900 ">Radeon RX 7900 XTX</option>
+                    <option value=" 7600"> Radeon RX 7600</option>
+                    <option value="7800 ">Radeon RX 7800 XT</option>
+                    <option value="7900 ">Radeon RX 7900 XT</option>
+                    <option value="6700 "> Radeon RX 6700 XT</option>
+                </select>
+            </form>
+            <form class="text-black">
+                <select class="p-2 rounded" id="carteintel">
+                    <option value="0" selected disabled hidden>CHOOSE YOUR CARTE</option>
+                    <option value="750">Arc A750</option>
+                    <option value="380"> Arc A380</option>
+
+                </select>
+            </form>
+            <h5 class="underline">PROCESSEUR</h5>
+            <div class="  flex justify-around  ">
+
+                <button id="processeur1" class="  border-2 border-white rounded h-8 w-16 :hover"> AMD</button>
+                <button id="processeur2" class=" border-2 border-white rounded h-8 w-16 :hover"> INTEL</button>
+            </div>
+            <form class="text-black">
+                <select class="p-2 rounded" id="listprocesseuramd">
+                    <option value="0" selected disabled hidden>CHOOSE YOUR CARTE</option>
+                    <option value=" 750">Arc A750</option>
+                    <option value="380"> Arc A380</option>
+
+                </select>
+            </form>
+            <form class="text-black">
+                <select class="p-2 rounded" id="listprocesseurintel">
+                    <option value="0" selected disabled hidden>CHOOSE YOUR CARTE</option>
+                    <option value="750">Arc 750</option>
+                    <option value="380"> Arc A380</option>
+
+                </select>
+            </form>
+            <div class="  flex justify-between items-center ">
+
+
+                <p class="p-8">Total: $<span id="total"> 0</p>
+            </div>
+            <hr>
+            <button class="bg-violet-900 p-1 rounded-xl addbutton mb-3" id="pro3btn">Add to List</button>
+
+        </div>
+
+
+    </section>
+    <section class="m-10  flex justify-evenly items-center gap- flex-wrap  ">
+        <div class=" w-3/6 flex flex-col items-center gap-7  ">
+            <h2 class=" text-white w-fit place-content-center text-center font-bold text-3xl">Mecanique Keyboard Razer
+            </h2>
+            <img src="brief4 assets/keyboard2.png" alt="Keyboard"
+                class="mt-4 mb-8 w-96 flex justify-center hover:scale-110 transition ">
+
+            <div class=" flex flex-col items center  gap-1 flex-wrap ">
+
+                <h4 class=" text-gray-50 underline">DETAILS</h4>
+
+                <ul class=" ml-7 w-60 text-gray-50 list-disc">
+                    <li>
+                        <p>sdfffffffffffefzzzsd</p>
+                    </li>
+                    <li>
+                        <p>sefffffffffffffreefs</p>
+                    </li>
+                    <li>
+                        <p>esfresdddddddddsffes</p>
+                    </li>
+                    <li>
+                        <p>esesfeeseeeresfders</p>
+                    </li>
+                    <li>
+                        <p>dzzzzzzefrgsfdtrgf</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class=" text-gray-50  lg:w-2/5 w-96 mt-7 flex flex-col  h-[440px]  lg:h-[425px] p-2  gap-4 text-center border-2 border-white rounded ">
+            <h2 class=" w place-content-center font-bold text-4xl">Mecanique Keyboard Razer</h2>
+            <div class=" border-2 border-purple-800 inline">
+                <h2>PRICE: 2155 $</h2>
+            </div>
+            <h4 class="underline"> COSTUMIZE YOUR PRODUCTS .</h4>
+
+            <h5 class="underline">COLOR</h5>
+            <div class="  flex justify-around  ">
+                <div>
+                    <label for="silver" class="border-2 border-white rounded px-2 h-8 w-16 :hover">White</label>
+                    <input type="radio" name="colorclavier" id="silver" value="10">
+                </div>
+                <div>
+                    <label for="white" class="border-2 border-white rounded px-2 h-8 w-16  :hover">RGB</label>
+                    <input type="radio" name="colorclavier" id="white" value="20">
+                </div>
+                <div>
+                    <label for="black" class="border-2 border-white rounded px-2 h-8 w-16 :hover">Blue</label>
+                    <input type="radio" name="colorclavier" id="black" value="30">
+                </div>
+
+            </div>
+           
+
+
+                <p class="p-8">Total: $<span id="total"> 0</p>
+          
+            <hr>
+            <button class="bg-violet-900 p-1 rounded-xl addbutton mb-3" id="pro3btn">Add to List</button>
+
+        </div>
+    </section>
+
+
+    <hr>
+    <footer class="bg-black dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div><img src="imags/logo.png" alt="logo" class="object-fill h-20 w-30 mr-3" alt="FlowBite Logo">
+                </div>
+                <div>
+                    <h2 class="text-white text-3xl mb-5">Quick Links</h2>
+                    <ul class="font-medium text-white">
+                        <li class="cursor-pointer hover:text-gray-500">Home</li>
+                        <li class="cursor-pointer hover:text-gray-500">Products</li>
+                        <li class="cursor-pointer hover:text-gray-500">About</li>
+                        <li class="cursor-pointer hover:text-gray-500">Contact</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-white text-3xl mb-5">CONTACT ONFO</h2>
+                    <ul class="font-medium text-white">
+                        <li class="cursor-pointer hover:text-gray-500">NEW TORK NY 10016</li>
+                        <li class="cursor-pointer hover:text-gray-500">98 WEST 21TH STREET</li>
+                        <li class="cursor-pointer hover:text-gray-500">Joygame@gmail.com</li>
+                        <li class="cursor-pointer hover:text-gray-500">98 WEST 21TH STREET</li>
+                </div>
+                <div>
+                    <h2 class="text-white text-3xl mb-5">CONTACT</h2>
+                    <ul class="font-medium text-white text-4xl">
+                        <i class="cursor-pointer fa-brands fa-facebook" style="color: #eff0f0;"></i>
+                        <i class="cursor-pointer fa-brands fa-instagram" style="color: #f2f2f3;"></i>
+                        <i class="cursor-pointer fa-brands fa-twitter" style="color: #eff0f0;"></i>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </footer>
+    <script src="form.js"></script>
+    <script>
+        var processeura = document.getElementById("processeur1");
+        var processeurb = document.getElementById("processeur2");
+        document.getElementById("listprocesseuramd").hidden = true;
+        document.getElementById("listprocesseurintel").hidden = true;
+
+        processeura.addEventListener("click", function () {
+            document.getElementById("listprocesseuramd").hidden = false;
+            document.getElementById("listprocesseurintel").hidden = true;
+
+        })
+        processeurb.addEventListener("click", function () {
+            document.getElementById("listprocesseuramd").hidden = true;
+            document.getElementById("listprocesseurintel").hidden = false;
+
+        })
+
+
+        var NVIDIAbutton = document.getElementById("NVIDIA-button");
+        var AMDbutton = document.getElementById("AMD-button");
+        var INTELbutton = document.getElementById("INTEL-button");
+        document.getElementById("cartenvidia").hidden = true;
+        document.getElementById("carteamd").hidden = true;
+        document.getElementById("carteintel").hidden = true;
+        NVIDIAbutton.addEventListener("click", function () {
+            document.getElementById("cartenvidia").hidden = false;
+            document.getElementById("carteamd").hidden = true;
+
+            document.getElementById("carteintel").hidden = true;
+
+
+        })
+        AMDbutton.addEventListener("click", function () {
+            document.getElementById("cartenvidia").hidden = true;
+
+            document.getElementById("carteamd").hidden = false;
+            document.getElementById("carteintel").hidden = true;
+
+
+
+        })
+        INTELbutton.addEventListener("click", function () {
+            document.getElementById("cartenvidia").hidden = true;
+
+            document.getElementById("carteamd").hidden = true;
+
+            document.getElementById("carteintel").hidden = false;
+
+        })
+        // Fonction pour réinitialiser le style des boutons
+        function resetButtonStyles() {
+            NVIDIAbutton.style.backgroundColor = "";
+            NVIDIAbutton.style.color = "white";
+
+            AMDbutton.style.backgroundColor = "";
+            AMDbutton.style.color = "white";
+
+            INTELbutton.style.backgroundColor = "";
+            INTELbutton.style.color = "white";
+
+            processeura.style.backgroundColor = "";
+            processeura.style.color = "white";
+
+
+            processeurb.style.backgroundColor = "";
+            processeurb.style.color = "white";
+
+
+        }
+
+        NVIDIAbutton.addEventListener("click", function () {
+            resetButtonStyles();
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+        });
+
+        AMDbutton.addEventListener("click", function () {
+            resetButtonStyles();
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+        });
+
+        INTELbutton.addEventListener("click", function () {
+            resetButtonStyles();
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+        });
+        processeura.addEventListener("click", function () {
+            resetButtonStyles();
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+        });
+        processeurb.addEventListener("click", function () {
+            resetButtonStyles();
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+        });
+
+
+
+
+        // Sélectionnez tous les boutons
+        var buttons = document.getElementsByTagName("button");
+
+        // Parcourez tous les boutons et ajoutez un gestionnaire d'événement de clic
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener("click", function () {
+                // Vérifiez si le bouton est déjà sélectionné (en blanc)
+                if (this.classList.contains("clicked")) {
+                    // Si oui, rétablissez le style par défaut (noir)
+                    this.style.backgroundColor = "";
+                    this.style.color = "white";
+                    this.classList.remove("clicked");
+                } else {
+                    // Sinon, appliquez le style sélectionné (blanc)
+                    this.style.backgroundColor = "white";
+                    this.style.color = "black";
+                    this.classList.add("clicked");
+                }
+            });
+        }
+        // Sélectionnez les boutons "HDD" et "SSD"
+        var hddButton = document.getElementById("hdd-button");
+        var ssdButton = document.getElementById("ssd-button");
+
+        // Ajoutez des gestionnaires d'événements de clic pour les deux boutons
+        hddButton.addEventListener("click", function () {
+            // Désélectionnez le bouton "SSD"
+            ssdButton.style.backgroundColor = "";
+            ssdButton.style.color = "white";
+            ssdButton.classList.remove("clicked");
+
+            // Sélectionnez le bouton "HDD"
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+            this.classList.add("clicked");
+        });
+
+        ssdButton.addEventListener("click", function () {
+            // Désélectionnez le bouton "HDD"
+            hddButton.style.backgroundColor = "";
+            hddButton.style.color = "white";
+            hddButton.classList.remove("clicked");
+
+            // Sélectionnez le bouton "SSD"
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+            this.classList.add("clicked");
+        });
+
+        // Sélectionnez les boutons de couleur
+        var silverButton = document.getElementById("silver-button");
+        var whiteButton = document.getElementById("white-button");
+        var blackButton = document.getElementById("black-button");
+
+        // Ajoutez des gestionnaires d'événements de clic pour les boutons de couleur
+        silverButton.addEventListener("click", function () {
+            // Désélectionnez les autres boutons de couleur
+            whiteButton.style.backgroundColor = "";
+            whiteButton.style.color = "white";
+            whiteButton.classList.remove("clicked");
+            blackButton.style.backgroundColor = "";
+            blackButton.style.color = "white";
+            blackButton.classList.remove("clicked");
+
+            // Sélectionnez le bouton "Silver"
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+            this.classList.add("clicked");
+        });
+
+        whiteButton.addEventListener("click", function () {
+            // Désélectionnez les autres boutons de couleur
+            silverButton.style.backgroundColor = "";
+            silverButton.style.color = "white";
+            silverButton.classList.remove("clicked");
+            blackButton.style.backgroundColor = "";
+            blackButton.style.color = "white";
+            blackButton.classList.remove("clicked");
+
+            // Sélectionnez le bouton "White"
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+            this.classList.add("clicked");
+        });
+
+        blackButton.addEventListener("click", function () {
+            // Désélectionnez les autres boutons de couleur
+            silverButton.style.backgroundColor = "";
+            silverButton.style.color = "white";
+            silverButton.classList.remove("clicked");
+            whiteButton.style.backgroundColor = "";
+            whiteButton.style.color = "white";
+            whiteButton.classList.remove("clicked");
+
+            // Sélectionnez le bouton "Black"
+            this.style.backgroundColor = "white";
+            this.style.color = "black";
+            this.classList.add("clicked");
+        });
+
+        /**************/
+
+
+
+    </script>
+
+</body>
+
+</html>
