@@ -211,6 +211,13 @@ document.addEventListener("DOMContentLoaded", function () {
         changeVisibility()
     }
 
+    let data = JSON.parse(localStorage.getItem("items"));
+    let arrayToStore = []
+    data ? arrayToStore.push(...data) : arrayToStore
+    let containerElement = document.getElementById("panierlist");
+
+    for (let i = 0; i < probtn.length; i++) {
+        console.log("ifirst llop")
 
     var data = JSON.parse(localStorage.getItem("items"));
     var arrayToStore = []
@@ -218,12 +225,25 @@ document.addEventListener("DOMContentLoaded", function () {
     var containerElement = document.getElementById("panierlist");
 
     for (let i = 0; i < probtn.length; i++) {
+
         probtn[i].addEventListener("click", e => {
             arrayToStore.push(shoplist[i])
             
             for (let j = 0; j < arrayToStore.length; j++) {
                 let data = JSON.stringify(arrayToStore)
                 localStorage.setItem("items", data)
+
+            console.log("inside array")
+                
+            }
+            putList()
+            console.log("rebuild")
+        });
+
+    }
+    /****/
+
+
             }
             
         });
@@ -233,10 +253,25 @@ document.addEventListener("DOMContentLoaded", function () {
  
   
 
+
     data ? putList() : null
 
     var divList = 0;
     function putList() {
+
+        let containerElementCart = document.getElementById("poductlist1")
+        containerElementCart.innerHTML = '';
+        const newLocal = data = JSON.parse(localStorage.getItem("items"));
+        data.forEach(item => {
+            divList = `
+            <div class="py-8  flex flex-row text-white gap-4 " id="productlist2">
+            <img src="${item.Image}" alt=".." id="prdimage" class="w-[100px] h-[100px]">
+            <h6 id="productname">${item.name}</h6>
+            <h6 id="prdprice">${item.price}</h6>
+            <button class="remove-button bg-slate-800 h-10 px-3 rounded-xl ">Remove</button>
+        </div>`;
+        containerElementCart.innerHTML += divList;
+
         containerElement.innerHTML = '';
         
         data.forEach(item => {
@@ -249,6 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             `;
             containerElement.innerHTML += divList;
+
 
         });
         const removeButtons = document.querySelectorAll('.remove-button');
