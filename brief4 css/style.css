@@ -46,7 +46,7 @@ body{
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
-    width: 120%;
+    width: 113%;
     margin: 30px 0px;
     padding: 10px;
     border-radius: 25px;
@@ -65,7 +65,7 @@ body{
 }
 .bar{
    
-    width: 90%;
+    width: auto;
     margin: 00px 0px;
     padding: 10px;
     border-radius: 25px;
@@ -152,6 +152,13 @@ cursor: pointer;
 }
 
 
+@media print {
+    .print, .validate {
+      display: none;
+    }
+  }
+  
+
  .contactinfo h3{
     margin-top: 70px;
     padding: 0px;
@@ -207,6 +214,13 @@ cursor: pointer;
     
     margin-left: 270px;
   }
+
+  .custom-prix-total{
+   
+    display: inline-block;
+    
+    margin-left: 260px;
+  }
   
 
 
@@ -230,9 +244,9 @@ cursor: pointer;
 .head h1{
    
     border: rgb(255, 255, 255) solid;
-    width: 80%;
+    width: 50%;
     padding: 10px;
-    margin-top: 100PX;
+    margin-top: 30PX;
     
     
     border-bottom-right-radius: 15px;
@@ -250,8 +264,7 @@ cursor: pointer;
 }
 .container{
     
-   
-    height: 100vh;
+    
     margin: auto;
     padding: 20px;
     width: auto;
@@ -260,9 +273,9 @@ cursor: pointer;
 .Joy_Game{
     
     width: 80vw;
-    font-size: 30px;
+    font-size: 25px;
     display: flex;
-    justify-content:flex-end;
+    justify-content: center;
     margin: 20px;
     
 }
@@ -276,7 +289,8 @@ cursor: pointer;
     padding: 10px;
     border-radius: 25px;
     color: black;
-    font-size: 10px;
+    font-size: 07px;
+    width: 70vw;
     
 }
 
@@ -299,29 +313,43 @@ cursor: pointer;
 
 .line1{
     width: 97%;
-    margin-left: 20px;
+    margin-left: 0px;
+}
+
+.line2{
+    width: 97%;
+    margin-left: 0px;
+    margin-top: 20px;
 }
 
 .Total1{
-    
+   
     display: flex;
-    justify-content: space-between;
-    width: 45%;
-    font-size: 12px;
-    margin-left: 210px;
+    justify-content: space-around;
+    width: 35%;
+    height: auto;
+    font-size: 10px;
+    margin-left: 170px;
+    margin-top: 20px;
 
 }
 
 .Total11{
-    padding: 20px;
+   
+    margin: 0px;
     line-height: 40px;
+    padding: 0px;
+
+   
     
 
 }
 
 .Total12{
-    padding: 20px;
+    margin: 00px;
     line-height: 40px;
+    padding: 0px;
+  
     
 }
 
@@ -330,11 +358,11 @@ cursor: pointer;
     display: flex;
     justify-content: end;
    
-    font-size: 20px;
-    width: 39%;
-    margin-left: 200px;
+    font-size: 25px;
+    width: 80%;
+    margin-left: 0px;
     font-weight: bold;
-    padding: 20px;
+    padding: 10px;
 }
 
 .print{
@@ -418,7 +446,7 @@ cursor: pointer;
   .custom-nom {
     
     display: inline-block;
-    margin-left: 70px;
+    margin-left: 52px;
     font-weight: bold;
     font-size: 07px;
   }
@@ -428,7 +456,7 @@ cursor: pointer;
    
     display: inline-block;
    
-    margin-left: 40px;
+    margin-left: 32px;
     font-size: 07px;
   }
   
@@ -437,10 +465,22 @@ cursor: pointer;
     
     display: inline-block;
     
-    margin-left: 70px;
+    margin-left: 55px;
+    font-size: 07px;
+  }
+  
+
+  .custom-prix-total{
+   
+    display: inline-block;
+    
+    margin-left: 60px;
     font-size: 07px;
   }
   
 
 
   }
+
+  
+  

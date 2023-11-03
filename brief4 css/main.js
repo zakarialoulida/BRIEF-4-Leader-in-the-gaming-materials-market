@@ -112,7 +112,7 @@ panierRecupe.forEach((item) => {
   const prixTotal = item.quantite * item.prix;
   prixUnitaireCell.classList.add('custom-prix-unitaire'); // Ajoutez une classe à la cellule du prix unitaire
   prixTotalCell.textContent = '$' + prixTotal;
-
+  prixTotalCell.classList.add('custom-prix-total'); // Ajoutez une classe à la cellule du prix total
   // Append the cells to the row
   
   row.appendChild(quantiteCell);
