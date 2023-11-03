@@ -212,10 +212,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 
-    var data = JSON.parse(localStorage.getItem("items"));
-    var arrayToStore = []
+    let data = JSON.parse(localStorage.getItem("items"));
+    let arrayToStore = []
     data ? arrayToStore.push(...data) : arrayToStore
-    var containerElement = document.getElementById("panierlist");
+    let containerElement = document.getElementById("panierlist");
 
     for (let i = 0; i < probtn.length; i++) {
         console.log("ifirst llop")
@@ -240,8 +240,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var divList = 0;
     function putList() {
-        containerElement.innerHTML = '';
-        data = JSON.parse(localStorage.getItem("items"));
+        let containerElementCart = document.getElementById("poductlist1")
+        containerElementCart.innerHTML = '';
+        const newLocal = data = JSON.parse(localStorage.getItem("items"));
         data.forEach(item => {
             divList = `
             <div class="py-8  flex flex-row text-white gap-4 " id="productlist2">
@@ -250,7 +251,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h6 id="prdprice">${item.price}</h6>
             <button class="remove-button bg-slate-800 h-10 px-3 rounded-xl ">Remove</button>
         </div>`;
-            containerElement.innerHTML += divList;
+        containerElementCart.innerHTML += divList;
 
         });
         const removeButtons = document.querySelectorAll('.remove-button');
