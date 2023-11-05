@@ -246,11 +246,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     <h6 id="productname">${item.name}</h6>
                     <h6 id="prdprice">${item.price}</h6>
                     <button class="remove-button">Remove</button>
+                    <button id="addbtn">+</button>
+                    <button id="rmvbtn">-</button>
                 </div>
             `;
             containerElement.innerHTML += divList;
 
         });
+        const addbtn =document.getElementById('addbtn');
+        const rmvbtn =document.getElementById('rmvbtn');
         const removeButtons = document.querySelectorAll('.remove-button');
         removeButtons.forEach(button => {
         button.addEventListener('click', (event) => {
