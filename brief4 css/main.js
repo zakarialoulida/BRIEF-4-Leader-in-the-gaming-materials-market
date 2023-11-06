@@ -54,6 +54,28 @@ validerCommandeButton.addEventListener('click', validerCommande);
 
 
 
+function updateDate() {
+  const dateDisplay = document.getElementById("dateDisplay");
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const currentDate = new Date().toLocaleDateString('en-US', options);
+  dateDisplay.textContent = currentDate;
+}
+
+// Mettre à jour la date lors du chargement initial de la page
+window.addEventListener('load', updateDate);
+
+// Mettre à jour la date toutes les secondes (1000 millisecondes)
+setInterval(updateDate, 1000);
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -68,9 +90,9 @@ validerCommandeButton.addEventListener('click', validerCommande);
 
 // Supposez que vous ayez une liste d'articles dans le panier
 const panier = [
-    { nom: 'Produit 1', quantite: 2, prix: 10 }, 
-   { nom: 'Produit 2', quantite: 1, prix: 20 },
-   { nom: 'Produit 3', quantite: 1, prix: 15 }
+    
+   { nom: 'Produit 3', quantite: 1, prix: 15 },
+   
    
 ];
 
@@ -89,6 +111,7 @@ localStorage.setItem('panier', JSON.stringify(panier));
 const panierRecupe = JSON.parse(localStorage.getItem('panier'));
 const tableBody = document.getElementById('panierTableBody');
 let totalHT = 0;
+tableBody.classList.add('tbodyposition')
 
 // Loop through the items in the panierRecupe array and create rows for each item
 panierRecupe.forEach((item) => {
