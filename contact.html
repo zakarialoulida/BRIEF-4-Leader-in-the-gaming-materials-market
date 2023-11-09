@@ -63,9 +63,10 @@
     </a>
   </nav>
 
+
   <section class="py-20">
     <h1 class="text-4xl md:text-6xl font-bold text-center mb-8 md:pt-20">FIND US</h1>
-    <div class="flex flex-col md:flex-row justify-evenly items-center">
+    <div class="flex flex-col md:flex-row justify-evenly items-center flex-wrap">
       <div class="w-full md:w-96 mt-8 md:mt-20 md:pt-14">
         <p class="text-base md:text-2xl text-center md:text-left">
           NEED HELP ?<br>
@@ -75,28 +76,35 @@
           47 rue des Couronnes, 75020 Paris, France
         </p>
       </div>
-      <div class="rounded-xl md:rounded-2xl p-8 md:pb-20 md:pt-20">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3648515664518!2d2.382376076358419!3d48.87032087133375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66de950b51cf1%3A0xef48ed13a44a359c!2s47%20Rue%20des%20Couronnes%2C%2075020%20Paris%2C%20France!5e0!3m2!1sen!2sma!4v1698930631766!5m2!1sen!2sma"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" class="rounded-xl"></iframe>
+      <div class="w-full md:w-1/2 lg:w-1/3 mt-8 md:mt-20">
+        <div class="rounded-xl p-8 md:pb-20 md:pt-20">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3648515664518!2d2.382376076358419!3d48.87032087133375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66de950b51cf1%3A0xef48ed13a44a359c!2s47%20Rue%20des%20Couronnes%2C%2075020%20Paris%2C%20France!5e0!3m2!1sen!2sma!4v1698930631766!5m2!1sen!2sma"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" class="rounded-xl w-full"></iframe>
+        </div>
       </div>
     </div>
     <h1 class="text-4xl md:text-6xl font-bold text-center mt-8 mb-8">CONTACT US</h1>
-    <div class="bg-indigo-800 rounded-xl w-full md:w-1/2 mx-4 md:mx-96 mb-8 md:mb-40">
-      <form id="form" class="flex flex-col justify-evenly gap-2">
+    <div
+      class="relative bg-indigo-800 rounded-xl w-full md:w-1/2 lg:w-1/3 mx-4 md:mx-auto mb-8 md:mb-40 flex flex-col items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center z-0"
+        style="background-image: url('your-background-image.jpg'); opacity: 0.5;"></div>
+      <form id="form"
+        class="relative z-10 flex flex-col justify-evenly gap-2 w-full md:w-4/5 lg:w-3/4 bg-indigo-800 bg-opacity-75 p-6 rounded-lg">
         <label class="mt-6 md:ml-6">Full Name :</label>
-        <input id="name" class="w-50% md: h-8 text-black rounded-lg mx-4 md:ml-6">
+        <input id="name" class="w-full md:w-2/3 h-8 text-black rounded-lg mx-4 md:ml-6">
         <label class="md:ml-6">E-mail :</label>
-        <input id="email" class="w-50% md: h-8 text-black rounded-lg mx-4 md:ml-6">
+        <input id="email" class="w-full md:w-2/3 h-8 text-black rounded-lg mx-4 md:ml-6">
         <label class="md:ml-6">Phone N° :</label>
-        <input id="tel" class="w-50% md: h-8 text-black rounded-lg mx-4 md:ml-6">
+        <input id="tel" class="w-full md:w-2/3 h-8 text-black rounded-lg mx-4 md:ml-6">
         <label class="md:ml-6">Message :</label>
-        <input class="w-50% pb-72 rounded-lg mx-4 md:ml-6 text-black">
-        <input value="Submit" type="submit"
-          class="bg-purple-950 w-40 md: m-auto h-10 rounded-2xl ml-32 md:ml-72 mt-4 md:mb-6 cursor-pointer">
+        <input class="w-full pb-4 md:pb-72 rounded-lg mx-4 md:ml-6 text-black">
+        <input value="Submit" type="submit" class="bg-purple-950 w-full h-10 rounded-2xl mt-4 cursor-pointer">
       </form>
     </div>
+
+
 
     <div id="confirmationMessage" class="bg-indigo-800 p-4 mt-4 rounded-lg max-w-md mx-auto hidden">
       <p class="text-lg font-semibold mb-2">Confirmation Message</p>
@@ -106,10 +114,9 @@
         <li><span class="font-semibold">Phone Number:</span> <span id="telValue"></span></li>
       </ul>
     </div>
-
-
-
   </section>
+
+
 
   <section class="bg-cover bg-center bg-no-repeat bg-fixed py-20 md:py-32"
     style="background-image: url('imags/bg4.jpg');">
