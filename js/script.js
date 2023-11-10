@@ -31,6 +31,7 @@ faqItems.forEach((item) => {
 
 
 
+
 document.addEventListener('DOMContentLoaded', function () {
   var form = document.getElementById('form');
   var nameValue = document.getElementById('nameValue');
@@ -79,3 +80,4 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault();
   });
 });
+
