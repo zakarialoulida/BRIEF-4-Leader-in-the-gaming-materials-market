@@ -15,44 +15,92 @@
 <body class="bg-black">
     <!-- navbar -->
     <nav class="flex justify-between bg-gray-900 text-white w-full">
-        <div class="xl:px-11  flex w-full items-center">
+        <div class="xl:px-11 justify-between flex w-full items-center">
             <a class="text-3xl font-bold font-heading" href="#">
                 <img class="h-[85px] logo" src="imags/logo.png" alt="logo"></a>
             <!-- Nav Links -->
-            <ul class=" md:flex px-10 ml-auto font-semibold font-heading space-x-12 max-md:gap-80 max-md:absolute max-md:right-0 max-md:top-[84px] max-md:bg-gray-950 max-md:h-[400px] max-md:w-[200px]" id="nav-links">
+            <ul class="hidden md:flex px-10 ml-auto font-semibold font-heading space-x-12 max-md:gap-80 max-md:absolute max-md:right-0 max-md:top-[84px] max-md:bg-gray-950 max-md:h-[400px] max-md:w-[200px]"
+                id="nav-links">
                 <li class="max-md:my-8"><a class="hover:text-gray-200 max-md:ml-[50px] " href="index.html">Home</a></li>
                 <li class="max-md:my-8"><a class="hover:text-gray-200" href="products.html">Products</a></li>
                 <li class="max-md:my-8"><a class="hover:text-gray-200" href="about.html">About</a></li>
                 <li><a class="hover:text-gray-200" href="contact.html">Contact</a></li>
             </ul>
-            
+
             <!-- Header Icons -->
-            <div class="hidden xl:flex items-center space-x-5">
-                <a class="flex items-center hover:text-gray-200" href="#">
+            <div class="flex items-center space-x-5 ">
+                <button class="flex items-center hover:text-gray-200" id="panier">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
-                    
-                </a>
+
+                </button>
             </div>
         </div>
         <!-- Responsive navbar -->
-        <a class="xl:hidden  flex mr-6 items-center" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+        <button class="md:hidden flex items-center cursor-pointer ml-2" id="burger-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-300" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
-        </a>
-        <a class="md:hidden flex items-center cursor-pointer" id="burger-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
-        </a>
-        
+        </button>
+
     </nav>
+
+    <div class="hidden bg-purple-900 px-3 py-5 items-center overflow-x-hidden overflow-y-auto absolute right-0 w-[400px] text-white flex-col"
+        id="panierlist">
+        <div class="flex flex-col justify-around" class="poductlist1Class " id="poductlist1">
+            <!-- panier list -->
+            <script>
+                let data = JSON.parse(localStorage.getItem("items"));
+                let arrayToStore = []
+                data ? arrayToStore.push(...data) : arrayToStore
+                let containerElement = document.getElementById("panierlist");
+
+                data ? putList() : null
+
+
+                var divList = 0;
+                function putList() {
+                    let containerElementCart = document.getElementById("poductlist1")
+
+                    containerElementCart.innerHTML = data.length <= 0 ? "<h3>No Items Selected</h3>" : ""
+
+                    const newLocal = data = JSON.parse(localStorage.getItem("items"));
+                    data.forEach(item => {
+                        divList = `
+        <div class="py-8  flex flex-row text-white gap-4 " id="productlist2">
+        <img src="${item.Image}" alt=".." id="prdimage" class="w-[100px] h-[100px]">
+        <h6 id="productname">${item.name}</h6>
+        <h6 id="prdprice">${item.price}</h6>
+        <button class="remove-button bg-slate-800 h-10 px-3 rounded-xl ">Remove</button>
+        </div>`;
+                        containerElementCart.innerHTML += divList;
+
+
+                    });
+                    const removeButtons = document.querySelectorAll('.remove-button');
+                    removeButtons.forEach(button => {
+                        button.addEventListener('click', (event) => {
+                            // Get the index of the product to remove based on the button's position in the list
+                            const productIndex = Array.from(containerElement.children).indexOf(event.target.parentElement);
+
+                            // Remove the product from the array and update the local storage
+                            arrayToStore.splice(productIndex, 1);
+                            localStorage.setItem("items", JSON.stringify(arrayToStore));
+
+                            // Remove the product from the displayed list
+                            event.target.parentElement.remove();
+                        });
+                    });
+                }
+            </script>
+        </div>
+
+        <a href="#" class="bg-gray-100 w-[300px] text-2xl text-center rounded-xl font-bold text-purple-900 ">valider</a>
+    </div>
 
     <section style="background-image: url(imags/img.home.png);" class="bg-cover bg-center w-full  h-[89vh]">
         <div class="p-20">
@@ -68,7 +116,8 @@
     </section>
 
     <section class="overflow-hidden relative ">
-        <div class="flex max-md:items-center items-center gap-x-20 mt-14 overflow-x-hidden mx-auto w-[960px] max-md:w-[260px]" id="scroll-container">
+        <div class="flex max-md:items-center items-center gap-x-20 mt-14 overflow-x-hidden scroll-smooth mx-auto w-[960px] max-md:w-[260px]"
+            id="scroll-container">
             <div class="min-w-max sm:w[100px] ">
                 <h3 class="text-3xl text-yellow-50">Gaming Keyboard</h3>
                 <img class="rounded-xl" src="imags/clavier.webp" alt="">
@@ -105,10 +154,12 @@
                     class="bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl mb-10 py-2 px-12 rounded-xl">more</button>
             </div>
         </div>
-        <button id="scroll-left" class="absolute left-0 top-1/2 transform -translate-y-1/2 ml-2 bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl py-2 px-4 rounded-full cursor-pointer">←</button>
-        <button id="scroll-right" class="absolute right-0 top-1/2 transform -translate-y-1/2 mr-2 bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl py-2 px-4 rounded-full cursor-pointer">→</button>
+        <button id="scroll-left"
+            class="absolute left-0 top-1/2 transform -translate-y-1/2 ml-2 bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl py-2 px-4 rounded-full cursor-pointer">←</button>
+        <button id="scroll-right"
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 mr-2 bg-violet-600 hover:bg-fuchsia-400 text-yellow-50 font-bold text-xl md:text-2xl py-2 px-4 rounded-full cursor-pointer">→</button>
     </section>
-    
+
 
     <section class="bg-img">
         <div class="flex justify-center items-center h-[70vh]">
@@ -145,7 +196,7 @@
                 <P class="text-yellow-50 my-5 md:my-10 text-xl">Subribe to find out about <br>new products and special
                     offers.</P>
                 <p class="text-yellow-50 my-5 md:my-10">E-mail*</p>
-                <input class="block w-[400px] bg-transparent h-12 rounded-l-xl border-solid border-4 border-white">
+                <input class="block w-[400px] bg-transparent h-12 rounded-xl border-solid border-4 border-white">
                 <button
                     class="bg-yellow-50 hover:bg-fuchsia-100 text-fuchsia-900 font-bold text-xl  mb-10 py-2 px-44 rounded-xl">Send</button>
             </div>
@@ -189,7 +240,7 @@
         </div>
 
     </footer>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
