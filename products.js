@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let x = false;
     panier.addEventListener("click", e => {
         if (x === false) {
-            panierlist.style.display = 'block';
+            panierlist.style.display = 'flex';
             x = true;
         } else {
             panierlist.style.display = 'none';
