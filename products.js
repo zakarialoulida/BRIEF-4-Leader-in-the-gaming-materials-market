@@ -14,7 +14,7 @@ const shoplist = [
     pro8 = { name: "Gaming Setup", price: "1050", type: "fullsetup", Image: "brief4Assets/fullsetup.png", customize: ["color", "storage", "graphiquecarte"], customaze: false,quantite: 1 },
     pro9 = { name: "Razer Headphones", price: "70", type: "Accessories", Image: "brief4Assets/headphones2.png", customize: ["color"], customaze: true,quantite: 1 },
     pro10 = { name: "Mach Gaming chair", price: "200", type: "Accessories", Image: "brief4Assets/gamingchair2.jpg", customize: ["chair color"], customaze: true,quantite: 1 },
-    pro11 = { name: "TUFF Gaming Monitor 120Hz", type: "Accessories", price: "300", Image: "brief4Assets/monitor2.jpg", customize: ["color"], customaze: true,quantite: 1 },
+    pro11 = { name: "TUFF Gaming Monitor 120Hz", type: "Accessories", price: "300", Image: "brief4Assets/monitor2.jpg", customize: ["rafraîchissementToPage"], customaze: true,quantite: 1 },
     pro12 = { name: "Nvidia Gtx1080ti", type: "Accessories", price: "400", Image: "brief4Assets/graphiccard 1.png", customize: ["color"], customaze: true,quantite: 1 },
     pro13 = { name: "Semi-mecanique Keyboard Zoei", type: "Accessories", price: "80", Image: "brief4Assets/keyboard5 1.png", customize: ["lightkeybordselect"], customaze: true,quantite: 1 },
     pro14 = { name: "Playstation 5", price: "900", type: "console", Image: "brief4Assets/console 3.png", customize: ["color"], customaze: false,quantite: 1 },
@@ -331,6 +331,27 @@ const addColorlightkeyboardCustomizeToPage = () => {
     </div>
     </div>`
 }
+const addtauxderafraîchissementToPage = () => {
+    optionsContainer.innerHTML += `<h5 class="underline">REFRECH RATE</h5>
+    <div class="color-container  flex justify-around  ">
+    <div>
+    <label for="silver" class="border-2 border-white rounded px-2 h-8 w-16 :hover">120 Hz(by default)</label>
+    <input type="radio" name="rafraîchissement" value="0">
+    </div>
+    <div>
+    <label for="silver" class="border-2 border-white rounded px-2 h-8 w-16 :hover">144 Hz</label>
+    <input type="radio" name="rafraîchissement" value="10">
+    </div>
+    <div>
+    <label for="silver" class="border-2 border-white rounded px-2 h-8 w-16 :hover">165 Hz</label>
+    <input type="radio" name="rafraîchissement" value="20">
+    </div>
+    <div>
+    <label for="silver" class="border-2 border-white rounded px-2 h-8 w-16 :hover">240 Hz</label>
+    <input type="radio" name="rafraîchissement" value="30">
+    </div>
+    </div>`
+}
 const addchairColorCustomizeToPage = () => {
     optionsContainer.innerHTML += `<h5 class="underline">light keyboard </h5>
     <div class="color-container  flex justify-around  ">
@@ -456,6 +477,9 @@ if (shoplist[productIndex] && shoplist[productIndex].customize) {
                 case 'chair color':
                     addchairColorCustomizeToPage();
                     break;
+                 case 'rafraîchissementToPage':
+                        addtauxderafraîchissementToPage();
+                        break;
             }
         });
         addTotal();
@@ -473,6 +497,7 @@ if (shoplist[productIndex] && shoplist[productIndex].customize) {
     const containerselect = document.getElementById("containeroptions")
     const colorSelect = document.querySelectorAll("input[type='radio'][name='color']")
     const lightkeybordselect=document.querySelectorAll("input[type='radio'][name='keyboardcolor']")
+    const rafraîchissementselect=document.querySelectorAll("input[type='radio'][name='rafraîchissement']")
     const totalValue = document.querySelector("#total")
     const Valueproduct2 = document.querySelector("#total2")
     const Valueproduct3 = document.querySelector("#total3")
@@ -483,6 +508,16 @@ if (shoplist[productIndex] && shoplist[productIndex].customize) {
 
 var totalPrice = 0
 
+const getrafraîchissementvalue = () =>{
+    let Refraich=0;
+    console.log("fffff")
+    rafraîchissementselect.forEach(input=>{
+        if (input.checked){
+            Refraich=input.value 
+        }
+    })
+    return parseInt(Refraich)
+}
 
 const getColorValue = () => {
     let colorPrice = 0
@@ -539,7 +574,12 @@ lightkeybordselect.forEach(input => {
         totalValue.textContent = totalPrice
     })
 })
-
+rafraîchissementselect.forEach(input => {
+    input.addEventListener("click", () => {
+        totalPrice =getrafraîchissementvalue ()
+        totalValue.textContent = totalPrice
+    })
+})
 
 colorSelect.forEach(input => {
     input.addEventListener("click", () => {
@@ -671,7 +711,7 @@ function totalCalcul() {
     
     console.log('her');
     
-    totalPrice = getColorValue() + getStorageValue() +getlightkeybordselect()+ getchaircolorselect()+hardwarevalue + processeurvalue
+    totalPrice = getColorValue() + getStorageValue() +getlightkeybordselect()+getrafraîchissementvalue()+ getchaircolorselect()+hardwarevalue + processeurvalue
     totalValue.textContent = totalPrice
     
     
@@ -683,30 +723,3 @@ document.documentElement.addEventListener('click', totalCalcul)
 
 
 
-// const getvidiagraphique = () => {
-    //     let graphiqueprice = nvidiagraphique.value
-    //     console.log(graphiqueprice)
-    //     return parseInt(graphiqueprice)
-    // }
-    
-    
-    /************** */
-    // var storageData = JSON.parse(localStorage.getItem("items")) || [];
-    // var arrayToStore = []
-    
-    // const addtoprice = () => {
-    //     let TotalP = 0;
-    //     const productIndex = urlParam.get("name");
-    //     TotalP = parseInt(selectedProduct.price) + parseInt(totalValue.textContent);
-    
-    //     const updatedValue = storageData.find((item) => item.name === productIndex);
-    
-    //     if (updatedValue) {
-    //         updatedValue.price = TotalP;
-    //         arrayToStore.push(storageData)
-    //         arrayToStore.push(updatedValue)
-    //         localStorage.setItem("items", JSON.stringify(storageData));
-    //     }
-    //     console.log(storageData);
-    
-    // }
