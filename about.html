@@ -50,7 +50,58 @@
     </button>
 
 </nav>
+<div class="hidden bg-purple-900 px-3 py-5 items-center overflow-x-hidden overflow-y-auto absolute right-0 w-[400px] text-white flex-col"
+        id="panierlist">
+        <div class="flex flex-col justify-around" class="poductlist1Class " id="poductlist1">
+            <!-- panier list -->
+            <script>
+                let data = JSON.parse(localStorage.getItem("items"));
+                let arrayToStore = []
+                data ? arrayToStore.push(...data) : arrayToStore
+                let containerElement = document.getElementById("panierlist");
 
+                data ? putList() : null
+
+
+                var divList = 0;
+                function putList() {
+                    let containerElementCart = document.getElementById("poductlist1")
+
+                    containerElementCart.innerHTML = data.length <= 0 ? "<h3>No Items Selected</h3>" : ""
+
+                    const newLocal = data = JSON.parse(localStorage.getItem("items"));
+                    data.forEach(item => {
+                        divList = `
+        <div class="py-8  flex flex-row text-white gap-4 " id="productlist2">
+        <img src="${item.Image}" alt=".." id="prdimage" class="w-[100px] h-[100px]">
+        <h6 id="productname">${item.name}</h6>
+        <h6 id="prdprice">${item.price}</h6>
+        <button class="remove-button bg-slate-800 h-10 px-3 rounded-xl ">Remove</button>
+        </div>`;
+                        containerElementCart.innerHTML += divList;
+
+
+                    });
+                    const removeButtons = document.querySelectorAll('.remove-button');
+                    removeButtons.forEach(button => {
+                        button.addEventListener('click', (event) => {
+                            // Get the index of the product to remove based on the button's position in the list
+                            const productIndex = Array.from(containerElement.children).indexOf(event.target.parentElement);
+
+                            // Remove the product from the array and update the local storage
+                            arrayToStore.splice(productIndex, 1);
+                            localStorage.setItem("items", JSON.stringify(arrayToStore));
+
+                            // Remove the product from the displayed list
+                            event.target.parentElement.remove();
+                        });
+                    });
+                }
+            </script>
+        </div>
+
+        <a href="#" class="bg-gray-100 w-[300px] text-2xl text-center rounded-xl font-bold text-purple-900 ">valider</a>
+    </div>
   <section class="bg-[url('imags/bg.png')] bg-cover bg-center pt-20 pb-10">
     <h1 class="text-4xl md:text-6xl text-white text-center">ABOUT US</h1>
     <div class="flex flex-col md:flex-row justify-evenly items-center">
