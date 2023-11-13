@@ -17,51 +17,46 @@
 <body class="overflow-x-hidden text-white">
   <!-- navbar -->
   <nav class="flex justify-between bg-gray-900 text-white w-full">
-    <div class="xl:px-11  flex w-full items-center">
+    <div class="xl:px-11 justify-between flex w-full items-center">
         <a class="text-3xl font-bold font-heading" href="index.html">
             <img class="h-[85px] logo" src="imags/logo.png" alt="logo"></a>
         <!-- Nav Links -->
-        <ul class=" md:flex px-10 ml-auto font-semibold font-heading space-x-12 max-md:gap-80 max-md:absolute max-md:right-0 max-md:top-[84px] max-md:bg-gray-950 max-md:h-[400px] max-md:w-[200px]" id="nav-links">
+        <ul class="hidden md:flex px-10 ml-auto font-semibold font-heading space-x-12 max-md:gap-80 max-md:absolute max-md:right-0 max-md:top-[84px] max-md:bg-gray-950 max-md:h-[400px] max-md:w-[200px]"
+            id="nav-links">
             <li class="max-md:my-8"><a class="hover:text-gray-200 max-md:ml-[50px] " href="index.html">Home</a></li>
             <li class="max-md:my-8"><a class="hover:text-gray-200" href="products.html">Products</a></li>
             <li class="max-md:my-8"><a class="hover:text-gray-200" href="about.html">About</a></li>
             <li><a class="hover:text-gray-200" href="contact.html">Contact</a></li>
         </ul>
-        
+
         <!-- Header Icons -->
-        <div class="hidden xl:flex items-center space-x-5">
-            <a class="flex items-center hover:text-gray-200" href="#">
+        <div class="flex items-center space-x-5 ">
+            <button class="flex items-center hover:text-gray-200" id="panier">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
-                
-            </a>
+
+            </button>
         </div>
     </div>
     <!-- Responsive navbar -->
-    <a class="xl:hidden  flex mr-6 items-center" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-200" fill="none" viewBox="0 0 24 24"
+    <button class="md:hidden flex items-center cursor-pointer ml-2" id="burger-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-300" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-        </svg>
-    </a>
-    <a class="md:hidden flex items-center cursor-pointer" id="burger-menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hover:text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
-    </a>
-    
-</nav>
+    </button>
 
+</nav>
 
   <section class="bg-[url('imags/bg.png')] bg-cover bg-center pt-20 pb-10">
     <h1 class="text-4xl md:text-6xl text-white text-center">ABOUT US</h1>
     <div class="flex flex-col md:flex-row justify-evenly items-center">
       <div class="w-full md:w-96 mt-8">
-        <p class="text-white pt-8 md:pt-32 text-center md:text-left">
+        <h1 class="text-4xl">JOY GAMING</h1>
+        <p class="text-white pt-4 md:pt-4 text-center md:text-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -105,7 +100,7 @@
 
           <!-- Image 3 -->
           <div class="group relative">
-            <img src="imags/galerie3.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+            <img src="imags/chair.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
             <div class="absolute inset-0 hidden group-hover:opacity-75 bg-black transition-opacity"></div>
             <div
               class="absolute inset-0 items-center justify-center hidden group-hover:flex bg-black bg-opacity-50 transition-opacity">
@@ -114,6 +109,8 @@
               </a>
             </div>
           </div>
+
+
 
           <!-- Image 4 -->
           <div class="group relative">
@@ -126,10 +123,59 @@
               </a>
             </div>
           </div>
+
+          <!-- Image 5 -->
+          <div class="group relative">
+            <img src="imags/galerie3.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 hidden group-hover:opacity-75 bg-black transition-opacity"></div>
+            <div
+              class="absolute inset-0 items-center justify-center hidden group-hover:flex bg-black bg-opacity-50 transition-opacity">
+              <a href="imags/galerie3.jpg" class="text-white text-2xl" data-lightbox="gallery">
+                <i class="far fa-image"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Image 6 -->
+          <div class="group relative">
+            <img src="imags/head-mic.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 hidden group-hover:opacity-75 bg-black transition-opacity"></div>
+            <div
+              class="absolute inset-0 items-center justify-center hidden group-hover:flex bg-black bg-opacity-50 transition-opacity">
+              <a href="imags/mouse.jpg" class="text-white text-2xl" data-lightbox="gallery">
+                <i class="far fa-image"></i>
+              </a>
+            </div>
+          </div>
+
+
+          <!-- Image 7 -->
+          <div class="group relative">
+            <img src="imags/mouse2.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 hidden group-hover:opacity-75 bg-black transition-opacity"></div>
+            <div
+              class="absolute inset-0 items-center justify-center hidden group-hover:flex bg-black bg-opacity-50 transition-opacity">
+              <a href="imags/galerie3.jpg" class="text-white text-2xl" data-lightbox="gallery">
+                <i class="far fa-image"></i>
+              </a>
+            </div>
+          </div>
+
+
+          <!-- Image8 -->
+          <div class="group relative">
+            <img src="imags/head1.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+            <div class="absolute inset-0 hidden group-hover:opacity-75 bg-black transition-opacity"></div>
+            <div
+              class="absolute inset-0 items-center justify-center hidden group-hover:flex bg-black bg-opacity-50 transition-opacity">
+              <a href="imags/galerie3.jpg" class="text-white text-2xl" data-lightbox="gallery">
+                <i class="far fa-image"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
   </section>
 
   <section class="bg-black py-16">
@@ -138,13 +184,13 @@
       <p class="text-lg mb-8">We are proud to collaborate with industry leaders in technology.</p>
 
       <div class="flex flex-wrap justify-center items-center space-x-4">
-        <!-- Razer Logo -->
         <img src="imags/asus.png" alt="ASUS" class="h-16 w-16">
         <img src="imags/dell.png" alt="DELL" class="h-16 w-16">
         <img src="imags/nvidea.png" alt="Nvidia" class="h-16 w-16">
       </div>
     </div>
   </section>
+
 
 
 
@@ -183,6 +229,7 @@
       </div>
     </div>
   </footer>
+  <script src="scriptHome.js"></script>
 </body>
 
 </html>
