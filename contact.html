@@ -74,21 +74,28 @@
     <h1 class="text-4xl md:text-6xl font-bold text-center mt-8 mb-8">CONTACT US</h1>
     <div
       class="relative bg-indigo-800 rounded-xl w-full md:w-1/2 lg:w-1/3 mx-4 md:mx-auto mb-8 md:mb-40 flex flex-col items-center justify-center overflow-hidden">
-      <div class="absolute inset-0 bg-cover bg-center z-0"
-        style="background-image: url('your-background-image.jpg'); opacity: 0.5;"></div>
       <form id="form"
-        class="relative z-10 flex flex-col justify-evenly gap-2 w-full md:w-4/5 lg:w-3/4 bg-indigo-800 bg-opacity-75 p-6 rounded-lg">
-        <label class="mt-6 md:ml-6">Full Name :</label>
-        <input id="name" class="w-full md:w-2/3 h-8 text-black rounded-lg mx-4 md:ml-6">
-        <label class="md:ml-6">E-mail :</label>
-        <input id="email" class="w-full md:w-2/3 h-8 text-black rounded-lg mx-4 md:ml-6">
-        <label class="md:ml-6">Phone N° :</label>
-        <input id="tel" class="w-full md:w-2/3 h-8 text-black rounded-lg mx-4 md:ml-6">
-        <label class="md:ml-6">Message :</label>
-        <input class="w-full pb-4 md:pb-72 rounded-lg mx-4 md:ml-6 text-black">
-        <input value="Submit" type="submit" class="bg-purple-950 w-full h-10 rounded-2xl mt-4 cursor-pointer">
+        class="relative z-10 flex flex-col justify-evenly gap-4 w-full md:w-4/5 lg:w-3/4 bg-indigo-800 bg-opacity-75 p-6 rounded-lg">
+        <label for="name" class="text-white">Full Name:</label>
+        <input id="name" type="text"
+          class="w-full h-10 text-black rounded-lg focus:outline-none focus:ring focus:border-indigo-300">
+
+        <label for="email" class="text-white mt-4">E-mail:</label>
+        <input id="email" type="email"
+          class="w-full h-10 text-black rounded-lg focus:outline-none focus:ring focus:border-indigo-300">
+
+        <label for="tel" class="text-white mt-4">Phone N°:</label>
+        <input id="tel" type="tel"
+          class="w-full h-10 text-black rounded-lg focus:outline-none focus:ring focus:border-indigo-300">
+
+        <label for="message" class="text-white mt-4">Message:</label>
+        <textarea id="message"
+          class="w-full h-32 text-black rounded-lg focus:outline-none focus:ring focus:border-indigo-300 resize-none"></textarea>
+
+        <button type="submit" class="bg-purple-950 w-full h-10 rounded-2xl mt-6 text-white">Submit</button>
       </form>
     </div>
+
 
 
 
@@ -103,7 +110,7 @@
   </section>
 
 
-<!-- faq -->
+  <!-- faq -->
   <section class="bg-cover bg-center bg-no-repeat bg-fixed py-20 md:py-32"
     style="background-image: url('imags/bg4.jpg');">
     <h2 class="text-4xl md:text-6xl font-bold text-center text-white">FAQ</h2>
