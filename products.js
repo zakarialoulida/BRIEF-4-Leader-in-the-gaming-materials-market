@@ -4,24 +4,24 @@
 //objects//
 
 const shoplist = [
-    pro1 = { name: "Mecanique Keyboard Spartan", price: "70", type: "Accessories" , Image: "brief4Assets/keyboard1.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
-    pro2 = { name: "Ancient souls",    price: "45", type: "Video_Games", Image: "brief4Assets/ancientsouls.png", quantite: 1 },
-    pro3 = { name: "Mecanique Keyboard Razer",    price: "70", type: "Accessories", Image: "brief4Assets/keyboard2.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
-    pro4 = { name: "Gaming Chair Mach",    price: "200", type: "Accessories", Image: "brief4Assets/gamingchair.png", customize: ["chair color"], customaze: true,quantite: 1 },
-    pro5 = { name: "Echo Headphones",    price: "100", type: "Accessories", Image: "brief4Assets/headphones1.jpg", customize: ["color"], customaze: false,quantite: 1 },
-    pro6 = { name: "Wave Console",    price: "30", type:"console", Image: "brief4Assets/console.png", customize: ["color"], customaze: true ,quantite: 1},
-    pro7 = { name: "Wireless Gaming Mouse",    price: "65",type:"console", Image: "brief4Assets/mouse.png", customize: ["color"], customaze: false ,quantite: 1},
-    pro8 = { name: "Gaming Setup",    price: "1050", type: "fullsetup", Image: "brief4Assets/fullsetup.png", customize: ["color", "storage", "graphiquecarte"], customaze: false,quantite: 1 },
-    pro9 = { name: "Razer Headphones",    price: "70", type: "Accessories", Image: "brief4Assets/headphones2.png", customize: ["color"], customaze: true,quantite: 1 },
-    pro10 = { name: "Mach Gaming chair",    price: "200", type: "Accessories", Image: "brief4Assets/gamingchair2.jpg", customize: ["chair color"], customaze: true,quantite: 1 },
-    pro11 = { name: "TUFF Gaming Monitor 120Hz", type: "Accessories",    price: "300", Image: "brief4Assets/monitor2.jpg", customize: ["rafraîchissementToPage"], customaze: true,quantite: 1 },
-    pro12 = { name: "Nvidia Gtx1080ti", type: "Accessories",    price: "400", Image: "brief4Assets/graphiccard 1.png", customize: ["color"], customaze: true,quantite: 1 },
-    pro13 = { name: "Semi-mecanique Keyboard Zoei", type: "Accessories",    price: "80", Image: "brief4Assets/keyboard5 1.png", customize: ["lightkeybordselect"], customaze: true,quantite: 1 },
-    pro14 = { name: "Playstation 5",    price: "900", type: "console", Image: "brief4Assets/console 3.png", customize: ["color"], customaze: false,quantite: 1 },
-    pro15 = { name: "Kingdom come: Delivarnce",    price: "12", type: "Video_Games", Image: "brief4Assets/videogame3 1.png",quantite: 1 },
-    pro16 = { name: "Full Gaming Setup",    price: "1500", type:"fullsetup", Image: "brief4Assets/setup2 1.png", customize: ["color", "storage", "graphiquecarte"], customaze: true ,quantite: 1},
-    pro17 = { name: "Mecanique Keyboard",    type: "Accessories", price: "90", Image: "brief4Assets/keyboard4 1.png", customize: ["lightkeybordselect"], customaze: false,quantite: 1 },
-    pro18 = { name: "Amd RX 6800",    price: "450", type: "Accessories", Image: "brief4Assets/amd 1.png", customize: ["color"], customaze: true,quantite: 1 },
+    pro1 = { name: "Mecanique Keyboard Spartan", price: "70", type: "Accessories", Image: "brief4Assets/keyboard1.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
+    pro2 = { name: "Ancient souls", price: "45", type: "Video_Games", Image: "brief4Assets/ancientsouls.png", quantite: 1 },
+    pro3 = { name: "Mecanique Keyboard Razer", price: "70", type: "Accessories", Image: "brief4Assets/keyboard2.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
+    pro4 = { name: "Gaming Chair Mach", price: "200", type: "Accessories", Image: "brief4Assets/gamingchair.png", customize: ["chair color"], customaze: true, quantite: 1 },
+    pro5 = { name: "Echo Headphones", price: "100", type: "Accessories", Image: "brief4Assets/headphones1.jpg", customize: ["color"], customaze: false, quantite: 1 },
+    pro6 = { name: "Wave Console", price: "30", type: "console", Image: "brief4Assets/console.png", customize: ["color"], customaze: true, quantite: 1 },
+    pro7 = { name: "Wireless Gaming Mouse", price: "65", type: "console", Image: "brief4Assets/mouse.png", customize: ["color"], customaze: false, quantite: 1 },
+    pro8 = { name: "Gaming Setup", price: "1050", type: "fullsetup", Image: "brief4Assets/fullsetup.png", customize: ["color", "storage", "graphiquecarte"], customaze: false, quantite: 1 },
+    pro9 = { name: "Razer Headphones", price: "70", type: "Accessories", Image: "brief4Assets/headphones2.png", customize: ["color"], customaze: true, quantite: 1 },
+    pro10 = { name: "Mach Gaming chair", price: "200", type: "Accessories", Image: "brief4Assets/gamingchair2.jpg", customize: ["chair color"], customaze: true, quantite: 1 },
+    pro11 = { name: "TUFF Gaming Monitor 120Hz", type: "Accessories", price: "300", Image: "brief4Assets/monitor2.jpg", customize: ["rafraîchissementToPage"], customaze: true, quantite: 1 },
+    pro12 = { name: "Nvidia Gtx1080ti", type: "Accessories", price: "400", Image: "brief4Assets/graphiccard 1.png", customize: ["color"], customaze: true, quantite: 1 },
+    pro13 = { name: "Semi-mecanique Keyboard Zoei", type: "Accessories", price: "80", Image: "brief4Assets/keyboard5 1.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
+    pro14 = { name: "Playstation 5", price: "900", type: "console", Image: "brief4Assets/console 3.png", customize: ["color"], customaze: false, quantite: 1 },
+    pro15 = { name: "Kingdom come: Delivarnce", price: "12", type: "Video_Games", Image: "brief4Assets/videogame3 1.png", quantite: 1 },
+    pro16 = { name: "Full Gaming Setup", price: "1500", type: "fullsetup", Image: "brief4Assets/setup2 1.png", customize: ["color", "storage", "graphiquecarte"], customaze: true, quantite: 1 },
+    pro17 = { name: "Mecanique Keyboard", type: "Accessories", price: "90", Image: "brief4Assets/keyboard4 1.png", customize: ["lightkeybordselect"], customaze: false, quantite: 1 },
+    pro18 = { name: "Amd RX 6800", price: "450", type: "Accessories", Image: "brief4Assets/amd 1.png", customize: ["color"], customaze: true, quantite: 1 },
 ]
 
 
@@ -244,31 +244,40 @@ document.addEventListener("DOMContentLoaded", function () {
     var divList = 0;
     function putList() {
         let containerElementCart = document.getElementById("poductlist1")
-        
+
         containerElementCart.innerHTML = arrayToStore.length <= 0 ? "<h3>No Items Selected</h3>" : "";
         data = JSON.parse(localStorage.getItem("items"));
         data.forEach(item => {
             divList = `
-            <div class="py-8  flex items-center flex-wrap text-white gap-4 " id="productlist2">
+            <div class="py-8  flex flex-col items-center   text-white gap-4 " id="productlist2">
+            <div class="flex flex-col items-center ">
             <img src="${item.Image}" alt=".." id="prdimage" class="w-[100px] h-[100px]">
             <h6 id="productname">${item.name}</h6>
-            <h6 id="prdprice">${item.price}</h6> 
-            <div class="flex items-center bg-black m-auto">
+            </div>
+            <div class="flex justify-between  w-2/3">
+            <h6 id="prdprice">${item.price}$</h6> 
+            <div class="flex justify-around items-center bg-black ">
             <button class=" plus bg-slate-800 h-4 px-[10px]  rounded flex items-center p-2 ">+</button>
-            <h6 class="quantite px-[8px]">${item.quantite}</h6> 
+            <h6 class="quantite ">${item.quantite}</h6> 
             
             <button class=" moins bg-slate-800 h-4 px-[10px]  rounded flex items-center p-2 ">-</button> 
             </div>
-            <button class="remove-button bg-slate-800 h-10 px-3 rounded-xl ">Remove</button>
+           
+            
             </div>
+            <button class="remove-button bg-slate-800 h-10 px-3 rounded-xl w-52 ">Remove</button>
+             </div>
+             
+             
+           <hr class="opacity-90">
            `;
             containerElementCart.innerHTML += divList;
-            
+
         });
         const removeButtons = document.querySelectorAll('.remove-button');
         removeButtons.forEach(button => {
             button.addEventListener('click', (event) => {
-                
+
                 const productIndex = Array.from(containerElement.children).indexOf(event.target.parentElement);
 
                 arrayToStore.splice(productIndex, 1);
@@ -277,37 +286,37 @@ document.addEventListener("DOMContentLoaded", function () {
                 event.target.parentElement.remove();
             });
         });
-        
-      
-       
+
+
+
     }
-    const plus=document.querySelectorAll(".plus");
-    const moins= document.querySelectorAll(".moins")
-plus.forEach((plusButton, productIndex) => {
-    
-            plusButton.addEventListener("click", () => {
-                console.log("plus")
-                arrayToStore[productIndex].quantite++;
-                console.log(arrayToStore[productIndex].quantite)
-                // Update the displayed quantity
-                document.querySelectorAll(".quantite")[productIndex].innerText = arrayToStore[productIndex].quantite;
-                
-                // Update the localStorage
-                localStorage.setItem("items", JSON.stringify(arrayToStore));
-            });
-        });
+    const plus = document.querySelectorAll(".plus");
+    const moins = document.querySelectorAll(".moins")
+    plus.forEach((plusButton, productIndex) => {
 
-      moins.forEach((moins,productIndex)=>
-      {
-        moins.addEventListener("click",()=>{
-            arrayToStore[productIndex].quantite--;
+        plusButton.addEventListener("click", () => {
+            console.log("plus")
+            arrayToStore[productIndex].quantite++;
             console.log(arrayToStore[productIndex].quantite)
-            document.querySelectorAll(".quantite")[productIndex].innerText=arrayToStore[productIndex].quantite;
-            localStorage.setItem("items",JSON.stringify(arrayToStore))
+            // Update the displayed quantity
+            document.querySelectorAll(".quantite")[productIndex].innerText = arrayToStore[productIndex].quantite;
 
+            // Update the localStorage
+            localStorage.setItem("items", JSON.stringify(arrayToStore));
         });
-      });
-  
+    });
+
+    moins.forEach((moins, productIndex) => {
+        moins.addEventListener("click", () => {
+            while (arrayToStore[productIndex].quantite > 1) {
+                arrayToStore[productIndex].quantite--;
+                console.log(arrayToStore[productIndex].quantite)
+                document.querySelectorAll(".quantite")[productIndex].innerText = arrayToStore[productIndex].quantite;
+                localStorage.setItem("items", JSON.stringify(arrayToStore))
+            }
+        });
+    });
+
 
 
 });
@@ -333,7 +342,7 @@ const addProductDetails = () => {
     </div>
     
     </div>`
-    
+
 }
 
 
@@ -458,28 +467,28 @@ const addcartegraphiquecustomizetopage = () => {
     
     
     `}
-  
-    /*** */
-    const addTotal = () => {
-        optionsContainer.innerHTML += `<div class="  border-2 border-purple-800 inline">
+
+/*** */
+const addTotal = () => {
+    optionsContainer.innerHTML += `<div class="  border-2 border-purple-800 inline">
         <p class="p-3">customization price: $<span id="total"> 0</p>
         </div>
         
 
         <hr>
         <button  onClick="addtoprice()" class="bg-violet-900 p-1 rounded-xl addbutton mb-3" id="customizeBtn"><a href="products.html"> Add to List</a></button>`
-const customizeButton = document.getElementById("customizeBtn");
-customizeButton.addEventListener("click", () => {
-    // Ajouter le produit au panier du local storage ici
-    const data = JSON.parse(localStorage.getItem("items")) || [];
-    let TotalP = 0;
-    TotalP = parseInt(selectedProduct.price) + parseInt(totalValue.textContent);
-    selectedProduct.price=TotalP
-    console.log("i'm here");
-    data.push(selectedProduct);
-    console.log("i'm here");
-    localStorage.setItem("items", JSON.stringify(data));
-});
+    const customizeButton = document.getElementById("customizeBtn");
+    customizeButton.addEventListener("click", () => {
+        // Ajouter le produit au panier du local storage ici
+        const data = JSON.parse(localStorage.getItem("items")) || [];
+        let TotalP = 0;
+        TotalP = parseInt(selectedProduct.price) + parseInt(totalValue.textContent);
+        selectedProduct.price = TotalP
+        console.log("i'm here");
+        data.push(selectedProduct);
+        console.log("i'm here");
+        localStorage.setItem("items", JSON.stringify(data));
+    });
 }
 
 
@@ -493,55 +502,55 @@ if (shoplist[productIndex] && shoplist[productIndex].customize) {
             case 'color':
                 addColorCustomizeToPage();
                 break;
-                case 'storage':
+            case 'storage':
                 addStorageCustomizeToPage();
                 break;
-                case 'graphiquecarte':
-                    addcartegraphiquecustomizetopage();
+            case 'graphiquecarte':
+                addcartegraphiquecustomizetopage();
                 break; // Assurez-vous d'ajouter un "break" ici pour éviter d'exécuter les autres cas
             case 'lightkeybordselect':
                 addColorlightkeyboardCustomizeToPage();
                 break;
-                case 'chair color':
-                    addchairColorCustomizeToPage();
-                    break;
-                 case 'rafraîchissementToPage':
-                        addtauxderafraîchissementToPage();
-                        break;
-            }
-        });
-        addTotal();
-    } else {
-        optionsContainer.innerHTML = `<h1>You can't customize this item</h1>`;
-    }
-    var processeurvalue = 0
-    const processeurselect = document.getElementById("processeuroptions")
-    const processeuramdbutton = document.getElementById("processeur1")
-    const processeurintelbutton = document.getElementById("processeur2")
-    var hardwarevalue = 0
-    const intelbutton = document.getElementById("INTEL-button")
-    const amdbutton = document.getElementById("AMD-button")
-    const nvidiabutton = document.getElementById("NVIDIA-button")
-    const containerselect = document.getElementById("containeroptions")
-    const colorSelect = document.querySelectorAll("input[type='radio'][name='color']")
-    const lightkeybordselect=document.querySelectorAll("input[type='radio'][name='keyboardcolor']")
-    const rafraîchissementselect=document.querySelectorAll("input[type='radio'][name='rafraîchissement']")
-    const totalValue = document.querySelector("#total")
-    const Valueproduct2 = document.querySelector("#total2")
-    const Valueproduct3 = document.querySelector("#total3")
-    const storageValue = document.getElementById("optionstorage")
-    const colorclavier = document.querySelectorAll("input[type='radio'][name='colorclavier']")
-    const chaircolorselect = document.querySelectorAll("input[type='radio'][name='chaircolor']")
-    const hardWareSelect = document.querySelectorAll("input[type='radio'][name='storage']")
+            case 'chair color':
+                addchairColorCustomizeToPage();
+                break;
+            case 'rafraîchissementToPage':
+                addtauxderafraîchissementToPage();
+                break;
+        }
+    });
+    addTotal();
+} else {
+    optionsContainer.innerHTML = `<h1>You can't customize this item</h1>`;
+}
+var processeurvalue = 0
+const processeurselect = document.getElementById("processeuroptions")
+const processeuramdbutton = document.getElementById("processeur1")
+const processeurintelbutton = document.getElementById("processeur2")
+var hardwarevalue = 0
+const intelbutton = document.getElementById("INTEL-button")
+const amdbutton = document.getElementById("AMD-button")
+const nvidiabutton = document.getElementById("NVIDIA-button")
+const containerselect = document.getElementById("containeroptions")
+const colorSelect = document.querySelectorAll("input[type='radio'][name='color']")
+const lightkeybordselect = document.querySelectorAll("input[type='radio'][name='keyboardcolor']")
+const rafraîchissementselect = document.querySelectorAll("input[type='radio'][name='rafraîchissement']")
+const totalValue = document.querySelector("#total")
+const Valueproduct2 = document.querySelector("#total2")
+const Valueproduct3 = document.querySelector("#total3")
+const storageValue = document.getElementById("optionstorage")
+const colorclavier = document.querySelectorAll("input[type='radio'][name='colorclavier']")
+const chaircolorselect = document.querySelectorAll("input[type='radio'][name='chaircolor']")
+const hardWareSelect = document.querySelectorAll("input[type='radio'][name='storage']")
 
 var totalPrice = 0
 
-const getrafraîchissementvalue = () =>{
-    let Refraich=0;
-   
-    rafraîchissementselect.forEach(input=>{
-        if (input.checked){
-            Refraich=input.value 
+const getrafraîchissementvalue = () => {
+    let Refraich = 0;
+
+    rafraîchissementselect.forEach(input => {
+        if (input.checked) {
+            Refraich = input.value
         }
     })
     return parseInt(Refraich)
@@ -556,22 +565,22 @@ const getColorValue = () => {
     })
     return parseInt(colorPrice)
 }
-const getlightkeybordselect = ()=>{
+const getlightkeybordselect = () => {
     console.log("lightkeybordselect");
-    let lightkeybordcolorprice=0
-    lightkeybordselect.forEach(input =>{
-        if(input.checked){
-            lightkeybordcolorprice=input.value
+    let lightkeybordcolorprice = 0
+    lightkeybordselect.forEach(input => {
+        if (input.checked) {
+            lightkeybordcolorprice = input.value
         }
     })
     return parseInt(lightkeybordcolorprice)
 }
-const getchaircolorselect = ()=>{
-   
-    let chaircolorprice=0
-    chaircolorselect.forEach(input =>{
-        if(input.checked){
-            chaircolorprice=input.value
+const getchaircolorselect = () => {
+
+    let chaircolorprice = 0
+    chaircolorselect.forEach(input => {
+        if (input.checked) {
+            chaircolorprice = input.value
         }
     })
     return parseInt(chaircolorprice)
@@ -587,24 +596,25 @@ const getHardWareValue = () => {
 }
 const getStorageValue = () => {
     let storagePrice = getHardWareValue() + parseInt(storageValue.value)
-    
+
     return parseInt(storagePrice)
 }
 
-chaircolorselect.forEach(input=>{
-  input.addEventListener("click",()=>{
-    totalPrice=getchaircolorselect()
-    totalValue.textContent=totalPrice
-  })  })
+chaircolorselect.forEach(input => {
+    input.addEventListener("click", () => {
+        totalPrice = getchaircolorselect()
+        totalValue.textContent = totalPrice
+    })
+})
 lightkeybordselect.forEach(input => {
     input.addEventListener("click", () => {
-        totalPrice =getlightkeybordselect ()
+        totalPrice = getlightkeybordselect()
         totalValue.textContent = totalPrice
     })
 })
 rafraîchissementselect.forEach(input => {
     input.addEventListener("click", () => {
-        totalPrice =getrafraîchissementvalue ()
+        totalPrice = getrafraîchissementvalue()
         totalValue.textContent = totalPrice
     })
 })
@@ -625,16 +635,16 @@ function create(id) {
     console.log(id);
     if (id == "NVIDIA-button") {
         console.log("nvidia")
-        
+
         select.innerHTML = `<option value="0" selected disabled hidden>CHOOSE YOUR CARTE</option>
         <option value="4090">RTX 4090</option>
         <option value="4070"> RTX 4070</option>
         <option value="4060"> GeForce RTX 4060</option>
         <option value="4080">GeForce RTX 4080</option>
         <option value="4065">RTX 4060 Ti</option>`
-        
+
     } if
-    (id == "AMD-button") {
+        (id == "AMD-button") {
         console.log("amd");
         select.innerHTML = `<option value="0" selected disabled hidden>CHOOSE YOUR CARTE</option>
         
@@ -643,10 +653,10 @@ function create(id) {
         <option value="7800 ">Radeon RX 7800 XT</option>
         <option value="7900 ">Radeon RX 7900 XT</option>
         <option value="6700 "> Radeon RX 6700 XT</option>`
-        
+
     }
     if (id == "INTEL-button") {
-        
+
         select.innerHTML = `<option value="0" selected disabled hidden>CHOOSE YOUR CARTE</option>
         
         <option value="0" selected disabled hidden>CHOOSE YOUR CARTE</option>
@@ -657,7 +667,7 @@ function create(id) {
     select.classList.add('text-black', 'priceglobal', 'max-w-fit', 'mx-auto', 'p-2', 'rounded');
     select.addEventListener("change", () => {
         hardwarevalue = parseInt(select.value)
-        
+
     })
     containerselect.innerHTML = ''
     containerselect.appendChild(select)
@@ -690,7 +700,7 @@ function createprocesseurselect(id) {
         <option value="70">AMD Ryzen 5 5600G</option>
         `
     }
-    if (id =="processeur2") {
+    if (id == "processeur2") {
         console.log("processeur2");
         selectprocesseur.innerHTML = `
         <option value="0" selected disabled hidden>CHOOSE YOUR processeur</option>
@@ -704,16 +714,16 @@ function createprocesseurselect(id) {
     selectprocesseur.classList.add('text-black', 'priceglobal', 'max-w-fit', 'mx-auto', 'p-2', 'rounded');
     selectprocesseur.addEventListener("change", () => {
         processeurvalue = parseInt(selectprocesseur.value)
-        
+
     })
     processeurselect.innerHTML = ''
     processeurselect.appendChild(selectprocesseur)
-    
+
 }
 processeuramdbutton.addEventListener("click", function () {
     createprocesseurselect("processeur1")
 })
-processeurintelbutton.addEventListener("click",function () {
+processeurintelbutton.addEventListener("click", function () {
     createprocesseurselect("processeur2")
 })
 
@@ -736,13 +746,13 @@ processeurintelbutton.addEventListener("click",function () {
 
 function totalCalcul() {
     console.log('hahahha');
-    
+
     console.log('her');
-    
-    totalPrice = getColorValue() + getStorageValue() +getlightkeybordselect()+getrafraîchissementvalue()+ getchaircolorselect()+hardwarevalue + processeurvalue
+
+    totalPrice = getColorValue() + getStorageValue() + getlightkeybordselect() + getrafraîchissementvalue() + getchaircolorselect() + hardwarevalue + processeurvalue
     totalValue.textContent = totalPrice
-    
-    
+
+
 }
 document.documentElement.addEventListener('click', totalCalcul)
 
