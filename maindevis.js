@@ -266,7 +266,7 @@ setInterval(updateDate, 1000);
 //   const row = document.createElement('tr');
 //   row.classList.add('custom-row'); // Ajoutez une classe à la ligne
 
-//   // Create table cells for each property (nom, quantite, prix)
+//   // Create table cells for each property (nom, , prix)
 //   const nomCell = document.createElement('td');
 //   nomCell.textContent = item.nom;
 //   nomCell.classList.add('custom-nom'); // Ajoutez une classe à la cellule du nom

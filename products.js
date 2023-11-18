@@ -5,23 +5,23 @@
 
 const shoplist = [
     pro1 = { name: "Mecanique Keyboard Spartan", price: "70", type: "Accessories" , Image: "brief4Assets/keyboard1.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
-    pro2 = { name: "Ancient souls", price: "45", type: "Video_Games", Image: "brief4Assets/ancientsouls.png",quantite: 1 },
-    pro3 = { name: "Mecanique Keyboard Razer", price: "70", type: "Accessories", Image: "brief4Assets/keyboard2.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
-    pro4 = { name: "Gaming Chair Mach", price: "200", type: "Accessories", Image: "brief4Assets/gamingchair.png", customize: ["chair color"], customaze: true,quantite: 1 },
-    pro5 = { name: "Echo Headphones", price: "100", type: "Accessories", Image: "brief4Assets/headphones1.jpg", customize: ["color"], customaze: false,quantite: 1 },
-    pro6 = { name: "Wave Console", price: "30", type:"console", Image: "brief4Assets/console.png", customize: ["color"], customaze: true ,quantite: 1},
-    pro7 = { name: "Wireless Gaming Mouse", price: "65",type:"console", Image: "brief4Assets/mouse.png", customize: ["color"], customaze: false ,quantite: 1},
-    pro8 = { name: "Gaming Setup", price: "1050", type: "fullsetup", Image: "brief4Assets/fullsetup.png", customize: ["color", "storage", "graphiquecarte"], customaze: false,quantite: 1 },
-    pro9 = { name: "Razer Headphones", price: "70", type: "Accessories", Image: "brief4Assets/headphones2.png", customize: ["color"], customaze: true,quantite: 1 },
-    pro10 = { name: "Mach Gaming chair", price: "200", type: "Accessories", Image: "brief4Assets/gamingchair2.jpg", customize: ["chair color"], customaze: true,quantite: 1 },
-    pro11 = { name: "TUFF Gaming Monitor 120Hz", type: "Accessories", price: "300", Image: "brief4Assets/monitor2.jpg", customize: ["rafraîchissementToPage"], customaze: true,quantite: 1 },
-    pro12 = { name: "Nvidia Gtx1080ti", type: "Accessories", price: "400", Image: "brief4Assets/graphiccard 1.png", customize: ["color"], customaze: true,quantite: 1 },
-    pro13 = { name: "Semi-mecanique Keyboard Zoei", type: "Accessories", price: "80", Image: "brief4Assets/keyboard5 1.png", customize: ["lightkeybordselect"], customaze: true,quantite: 1 },
-    pro14 = { name: "Playstation 5", price: "900", type: "console", Image: "brief4Assets/console 3.png", customize: ["color"], customaze: false,quantite: 1 },
-    pro15 = { name: "Kingdom come: Delivarnce", price: "12", type: "Video_Games", Image: "brief4Assets/videogame3 1.png",quantite: 1 },
-    pro16 = { name: "Full Gaming Setup", price: "1500", type:"fullsetup", Image: "brief4Assets/setup2 1.png", customize: ["color", "storage", "graphiquecarte"], customaze: true ,quantite: 1},
-    pro17 = { name: "Mecanique Keyboard", type: "Accessories", price: "90", Image: "brief4Assets/keyboard4 1.png", customize: ["lightkeybordselect"], customaze: false,quantite: 1 },
-    pro18 = { name: "Amd RX 6800", price: "450", type: "Accessories", Image: "brief4Assets/amd 1.png", customize: ["color"], customaze: true,quantite: 1 },
+    pro2 = { name: "Ancient souls",    price: "45", type: "Video_Games", Image: "brief4Assets/ancientsouls.png", quantite: 1 },
+    pro3 = { name: "Mecanique Keyboard Razer",    price: "70", type: "Accessories", Image: "brief4Assets/keyboard2.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
+    pro4 = { name: "Gaming Chair Mach",    price: "200", type: "Accessories", Image: "brief4Assets/gamingchair.png", customize: ["chair color"], customaze: true,quantite: 1 },
+    pro5 = { name: "Echo Headphones",    price: "100", type: "Accessories", Image: "brief4Assets/headphones1.jpg", customize: ["color"], customaze: false,quantite: 1 },
+    pro6 = { name: "Wave Console",    price: "30", type:"console", Image: "brief4Assets/console.png", customize: ["color"], customaze: true ,quantite: 1},
+    pro7 = { name: "Wireless Gaming Mouse",    price: "65",type:"console", Image: "brief4Assets/mouse.png", customize: ["color"], customaze: false ,quantite: 1},
+    pro8 = { name: "Gaming Setup",    price: "1050", type: "fullsetup", Image: "brief4Assets/fullsetup.png", customize: ["color", "storage", "graphiquecarte"], customaze: false,quantite: 1 },
+    pro9 = { name: "Razer Headphones",    price: "70", type: "Accessories", Image: "brief4Assets/headphones2.png", customize: ["color"], customaze: true,quantite: 1 },
+    pro10 = { name: "Mach Gaming chair",    price: "200", type: "Accessories", Image: "brief4Assets/gamingchair2.jpg", customize: ["chair color"], customaze: true,quantite: 1 },
+    pro11 = { name: "TUFF Gaming Monitor 120Hz", type: "Accessories",    price: "300", Image: "brief4Assets/monitor2.jpg", customize: ["rafraîchissementToPage"], customaze: true,quantite: 1 },
+    pro12 = { name: "Nvidia Gtx1080ti", type: "Accessories",    price: "400", Image: "brief4Assets/graphiccard 1.png", customize: ["color"], customaze: true,quantite: 1 },
+    pro13 = { name: "Semi-mecanique Keyboard Zoei", type: "Accessories",    price: "80", Image: "brief4Assets/keyboard5 1.png", customize: ["lightkeybordselect"], customaze: true,quantite: 1 },
+    pro14 = { name: "Playstation 5",    price: "900", type: "console", Image: "brief4Assets/console 3.png", customize: ["color"], customaze: false,quantite: 1 },
+    pro15 = { name: "Kingdom come: Delivarnce",    price: "12", type: "Video_Games", Image: "brief4Assets/videogame3 1.png",quantite: 1 },
+    pro16 = { name: "Full Gaming Setup",    price: "1500", type:"fullsetup", Image: "brief4Assets/setup2 1.png", customize: ["color", "storage", "graphiquecarte"], customaze: true ,quantite: 1},
+    pro17 = { name: "Mecanique Keyboard",    type: "Accessories", price: "90", Image: "brief4Assets/keyboard4 1.png", customize: ["lightkeybordselect"], customaze: false,quantite: 1 },
+    pro18 = { name: "Amd RX 6800",    price: "450", type: "Accessories", Image: "brief4Assets/amd 1.png", customize: ["color"], customaze: true,quantite: 1 },
 ]
 
 
@@ -246,44 +246,72 @@ document.addEventListener("DOMContentLoaded", function () {
         let containerElementCart = document.getElementById("poductlist1")
         
         containerElementCart.innerHTML = arrayToStore.length <= 0 ? "<h3>No Items Selected</h3>" : "";
-        const newLocal = data = JSON.parse(localStorage.getItem("items"));
+        data = JSON.parse(localStorage.getItem("items"));
         data.forEach(item => {
             divList = `
-            <div class="py-8  flex flex-row text-white gap-4 " id="productlist2">
+            <div class="py-8  flex items-center flex-wrap text-white gap-4 " id="productlist2">
             <img src="${item.Image}" alt=".." id="prdimage" class="w-[100px] h-[100px]">
             <h6 id="productname">${item.name}</h6>
-            <h6 id="prdprice">${item.price}</h6>
+            <h6 id="prdprice">${item.price}</h6> 
+            <div class="flex items-center bg-black m-auto">
+            <button class=" plus bg-slate-800 h-4 px-[10px]  rounded flex items-center p-2 ">+</button>
+            <h6 class="quantite px-[8px]">${item.quantite}</h6> 
+            
+            <button class=" moins bg-slate-800 h-4 px-[10px]  rounded flex items-center p-2 ">-</button> 
+            </div>
             <button class="remove-button bg-slate-800 h-10 px-3 rounded-xl ">Remove</button>
             </div>
-            <div class="flex justify-items-center m-auto">
-            <button class=" bg-slate-800 h-4 px-[10px] py-[10px] flex items-center  ">+</button>
-            ${shoplist.quantity}
-            <button class=" bg-slate-800 h-4 px-[10px] py-[10px] flex items-center ">-</button> 
-            </div>`;
+           `;
             containerElementCart.innerHTML += divList;
             
         });
         const removeButtons = document.querySelectorAll('.remove-button');
         removeButtons.forEach(button => {
             button.addEventListener('click', (event) => {
-                // Get the index of the product to remove based on the button's position in the list
+                
                 const productIndex = Array.from(containerElement.children).indexOf(event.target.parentElement);
 
-                // Remove the product from the array and update the local storage
                 arrayToStore.splice(productIndex, 1);
                 localStorage.setItem("items", JSON.stringify(arrayToStore));
 
-                // Remove the product from the displayed list
                 event.target.parentElement.remove();
             });
         });
+        
+      
+       
     }
+    const plus=document.querySelectorAll(".plus");
+    const moins= document.querySelectorAll(".moins")
+plus.forEach((plusButton, productIndex) => {
+    
+            plusButton.addEventListener("click", () => {
+                console.log("plus")
+                arrayToStore[productIndex].quantite++;
+                console.log(arrayToStore[productIndex].quantite)
+                // Update the displayed quantity
+                document.querySelectorAll(".quantite")[productIndex].innerText = arrayToStore[productIndex].quantite;
+                
+                // Update the localStorage
+                localStorage.setItem("items", JSON.stringify(arrayToStore));
+            });
+        });
 
+      moins.forEach((moins,productIndex)=>
+      {
+        moins.addEventListener("click",()=>{
+            arrayToStore[productIndex].quantite--;
+            console.log(arrayToStore[productIndex].quantite)
+            document.querySelectorAll(".quantite")[productIndex].innerText=arrayToStore[productIndex].quantite;
+            localStorage.setItem("items",JSON.stringify(arrayToStore))
+
+        });
+      });
+  
 
 
 });
 /********** */
-
 
 const urlParam = new URLSearchParams(window.location.search)
 const productIndex = urlParam.get("product")
@@ -510,7 +538,7 @@ var totalPrice = 0
 
 const getrafraîchissementvalue = () =>{
     let Refraich=0;
-    console.log("fffff")
+   
     rafraîchissementselect.forEach(input=>{
         if (input.checked){
             Refraich=input.value 
