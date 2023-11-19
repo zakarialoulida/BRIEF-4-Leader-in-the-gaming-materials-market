@@ -8,20 +8,22 @@ const shoplist = [
     pro2 = { name: "Ancient souls", price: "45", type: "Video_Games", Image: "brief4Assets/ancientsouls.png", quantite: 1 },
     pro3 = { name: "Mecanique Keyboard Razer", price: "70", type: "Accessories", Image: "brief4Assets/keyboard2.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
     pro4 = { name: "Gaming Chair Mach", price: "200", type: "Accessories", Image: "brief4Assets/gamingchair.png", customize: ["chair color"], customaze: true, quantite: 1 },
-    pro5 = { name: "Echo Headphones", price: "100", type: "Accessories", Image: "brief4Assets/headphones1.jpg", customize: ["color"], customaze: false, quantite: 1 },
+    pro5 = { name: "Echo Headphones", price: "100", type: "Accessories", Image: "brief4Assets/headphones1.jpg", customize: ["color"],  quantite: 1 },
     pro6 = { name: "Wave Console", price: "30", type: "console", Image: "brief4Assets/console.png", customize: ["color"], customaze: true, quantite: 1 },
-    pro7 = { name: "Wireless Gaming Mouse", price: "65", type: "console", Image: "brief4Assets/mouse.png", customize: ["color"], customaze: false, quantite: 1 },
-    pro8 = { name: "Gaming Setup", price: "1050", type: "fullsetup", Image: "brief4Assets/fullsetup.png", customize: ["color", "storage", "graphiquecarte"], customaze: false, quantite: 1 },
+    pro7 = { name: "Wireless Gaming Mouse", price: "65", type: "console", Image: "brief4Assets/mouse.png", customize: ["color"],  quantite: 1 },
+    pro8 = { name: "Gaming Setup", price: "1050", type: "fullsetup", Image: "brief4Assets/fullsetup.png", customize: ["color", "storage", "graphiquecarte"],  quantite: 1 },
     pro9 = { name: "Razer Headphones", price: "70", type: "Accessories", Image: "brief4Assets/headphones2.png", customize: ["color"], customaze: true, quantite: 1 },
     pro10 = { name: "Mach Gaming chair", price: "200", type: "Accessories", Image: "brief4Assets/gamingchair2.jpg", customize: ["chair color"], customaze: true, quantite: 1 },
     pro11 = { name: "TUFF Gaming Monitor 120Hz", type: "Accessories", price: "300", Image: "brief4Assets/monitor2.jpg", customize: ["rafraîchissementToPage"], customaze: true, quantite: 1 },
     pro12 = { name: "Nvidia Gtx1080ti", type: "Accessories", price: "400", Image: "brief4Assets/graphiccard 1.png", customize: ["color"], customaze: true, quantite: 1 },
     pro13 = { name: "Semi-mecanique Keyboard Zoei", type: "Accessories", price: "80", Image: "brief4Assets/keyboard5 1.png", customize: ["lightkeybordselect"], customaze: true, quantite: 1 },
-    pro14 = { name: "Playstation 5", price: "900", type: "console", Image: "brief4Assets/console 3.png", customize: ["color"], customaze: false, quantite: 1 },
+    pro14 = { name: "Playstation 5", price: "900", type: "console", Image: "brief4Assets/console 3.png", customize: ["color"],  quantite: 1 },
     pro15 = { name: "Kingdom come: Delivarnce", price: "12", type: "Video_Games", Image: "brief4Assets/videogame3 1.png", quantite: 1 },
     pro16 = { name: "Full Gaming Setup", price: "1500", type: "fullsetup", Image: "brief4Assets/setup2 1.png", customize: ["color", "storage", "graphiquecarte"], customaze: true, quantite: 1 },
-    pro17 = { name: "Mecanique Keyboard", type: "Accessories", price: "90", Image: "brief4Assets/keyboard4 1.png", customize: ["lightkeybordselect"], customaze: false, quantite: 1 },
-    pro18 = { name: "Amd RX 6800", price: "450", type: "Accessories", Image: "brief4Assets/amd 1.png", customize: ["color"], customaze: true, quantite: 1 },
+    pro17 = { name: "Mecanique Keyboard", type: "Accessories", price: "90", Image: "brief4Assets/keyboard4 1.png", customize: ["lightkeybordselect"],  quantite: 1 },
+    pro18 = { name: "Half Life 3", price: "450", type: "Video_Games", Image: "brief4Assets/halflife.png", customize: ["color"], quantite: 1 },
+    pro19 = { name: "GTA 6", price: "2000", type: "Video_Games", Image: "brief4Assets/videogame.jpg", customize: ["color"],  quantite: 1 },
+    pro20 = { name: "Amd RX 6800", price: "450", type: "Accessories", Image: "brief4Assets/amd 1.png", customize: ["color"], customaze: true, quantite: 1 },
 ]
 
 
@@ -39,32 +41,24 @@ document.addEventListener("DOMContentLoaded", function () {
         productsContainer.innerHTML += `
         <div class="productInfos flex flex-col ${product.type}  ">
                             <h2 class="text-center z-9">${product.name}</h2>
-                            <img src="${product.Image}" alt="${product.name}" class="hover:scale-110 transition ">
+                            <img src="${product.Image}" alt="${product.name}">
                             <h2>Price : ${product.price}$</h2>
                             <div class="flex justify-between">
                                 <button class="bg-violet-900 p-1 rounded-xl addbutton" id="pro${index + 1}btn">Add to List</button>
-                                ${product.customaze && `<a href="personnalize.html?product=${index}&name=${product.name}" class="bg-violet-900 p-1 rounded-xl">Customize</a>`}
+                                ${product.customaze !== undefined && product.customaze ? `<a href="personnalize.html?product=${index}&name=${product.name}" class="bg-violet-900 p-1 rounded-xl">Customize</a>` : ``}
                             </div>
                         </div>
         `
     })
+    /****************PAGINATION**************************/
+    const paginationButtons = document.querySelectorAll(".paginationButton")
+    const allProducts = document.querySelectorAll(".productInfos")
     let withFilter = false;
     let page = 1;
     const paginationdiv = document.getElementById('paginationdiv');
-    const changeVisibility = () => {
-        paginationdiv.hidden = withFilter
-        allProducts.forEach((product, index) => {
-            if ((index <= (page * 5) && index > (page * 5 - 5)) || withFilter) {
-                product.hidden = false
-            } else {
-                product.hidden = true
 
-            }
-        })
-    }
-
-    const paginationButtons = document.querySelectorAll(".paginationButton")
-    const allProducts = document.querySelectorAll(".productInfos")
+ 
+   
 
     paginationButtons.forEach(button => {
 
@@ -73,11 +67,22 @@ document.addEventListener("DOMContentLoaded", function () {
             changeVisibility()
         })
     })
+   const changeVisibility = () => {
+        paginationdiv.hidden = withFilter
+        allProducts.forEach((product, index) => {
+            if ((index < (page * 5) && index >= (page * 5 - 5)) || withFilter) {
+                product.hidden = false
+            } else {
+                product.hidden = true
 
+            }
+        })
+    }
+/*******************************************/
     const panier = document.getElementById('panier');
     const panier2 = document.getElementById('panier2');
     const panierlist = document.getElementById('panierlist');
-    // products classes
+    // products categories
     const Accessories = document.querySelectorAll(".Accessories");
     const videogames = document.querySelectorAll(".Video_Games");
     const Consoles = document.querySelectorAll(".console");
@@ -110,7 +115,9 @@ document.addEventListener("DOMContentLoaded", function () {
         pro15btn = document.getElementById('pro15btn'),
         pro16btn = document.getElementById('pro16btn'),
         pro17btn = document.getElementById('pro17btn'),
-        pro18btn = document.getElementById('pro18btn')
+        pro18btn = document.getElementById('pro18btn'),
+        pro19btn = document.getElementById('pro19btn'),
+        pro20btn = document.getElementById('pro20btn')
     ]
 
 
@@ -214,21 +221,19 @@ document.addEventListener("DOMContentLoaded", function () {
         changeVisibility()
     }
 
-
+/********************FONCTION POUR LOCAL STORAGE ET POUR LE PANIER ET ********************/ 
     let data = JSON.parse(localStorage.getItem("items"));
     let arrayToStore = []
     data ? arrayToStore.push(...data) : arrayToStore
     let containerElement = document.getElementById("panierlist");
 
     for (let i = 0; i < probtn.length; i++) {
-        console.log("ifirst llop")
         probtn[i].addEventListener("click", e => {
             arrayToStore.push(shoplist[i])
 
             for (let j = 0; j < arrayToStore.length; j++) {
                 let data = JSON.stringify(arrayToStore)
                 localStorage.setItem("items", data)
-                console.log("inside array")
 
             }
             putList()
@@ -277,16 +282,13 @@ document.addEventListener("DOMContentLoaded", function () {
         const removeButtons = document.querySelectorAll('.remove-button');
         removeButtons.forEach(button => {
             button.addEventListener('click', (event) => {
-
-                const productIndex = Array.from(containerElement.children).indexOf(event.target.parentElement);
-
+                const parentElement = event.target.parentElement;
+                const productIndex = Array.from(containerElementCart.children).indexOf(parentElement);
                 arrayToStore.splice(productIndex, 1);
                 localStorage.setItem("items", JSON.stringify(arrayToStore));
-
-                event.target.parentElement.remove();
+                parentElement.remove();
             });
         });
-
 
 
     }
