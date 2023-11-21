@@ -281,6 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
            <hr class="opacity-90">
            `;
             containerElementCart.innerHTML += divList;
+            
 
         });
 
@@ -298,30 +299,29 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
 
-
     }
     const plus = document.querySelectorAll(".plus");
     const moins = document.querySelectorAll(".moins")
-    plus.forEach((plusButton, productIndex) => {
+    
+        plus.forEach((plusButton, productIndex) => {
 
-        plusButton.addEventListener("click", () => {
-            console.log("plus")
-            arrayToStore[productIndex].quantite++;
-            console.log(arrayToStore[productIndex].quantite)
-
-            document.querySelectorAll(".quantite")[productIndex].innerText = arrayToStore[productIndex].quantite;
-            localStorage.setItem("items", JSON.stringify(arrayToStore));
+            plusButton.addEventListener("click", () => {
+                console.log("plus")
+                arrayToStore[productIndex].quantite++;
+                console.log(arrayToStore[productIndex].quantite)
+    
+                document.querySelectorAll(".quantite")[productIndex].innerText = arrayToStore[productIndex].quantite;
+                localStorage.setItem("items", JSON.stringify(arrayToStore));
+            });
         });
-    });
+    
 
     moins.forEach((moins, productIndex) => {
         moins.addEventListener("click", () => {
-            while (arrayToStore[productIndex].quantite > 1) {
                 arrayToStore[productIndex].quantite--;
                 console.log(arrayToStore[productIndex].quantite)
                 document.querySelectorAll(".quantite")[productIndex].innerText = arrayToStore[productIndex].quantite;
                 localStorage.setItem("items", JSON.stringify(arrayToStore))
-            }
         });
     });
 
