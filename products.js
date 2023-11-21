@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             }
             putList()
-            console.log("rebuild")
+
         });
        
     }

@@ -8,6 +8,21 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+//panier
+const panier = document.getElementById('panier');
+const panierlist = document.getElementById('panierlist');
+
+let x = false;
+panier.addEventListener("click", e => {
+    if (x === false) {
+        panierlist.style.display = 'flex';
+        x = true;
+    } else {
+        panierlist.style.display = 'none';
+        x = false;
+    }
+
+})
 
 
 const scrollContainer = document.getElementById("scroll-container");
@@ -24,20 +39,6 @@ scrollRightButton.addEventListener("click", () => {
     scrollContainer.scrollLeft += 400; 
 });
 
-const panier = document.getElementById('panier');
-const panierlist = document.getElementById('panierlist');
-
-let x = false;
-panier.addEventListener("click", e => {
-    if (x === false) {
-        panierlist.style.display = 'flex';
-        x = true;
-    } else {
-        panierlist.style.display = 'none';
-        x = false;
-    }
-
-})
 
 
 
