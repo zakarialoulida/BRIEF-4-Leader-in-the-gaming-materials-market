@@ -30,7 +30,6 @@ const shoplist = [
 
 
 
-
 /********************************************* */
 
 
@@ -50,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         </div>
         `
     })
+    
 
     /****************PAGINATION**************************/
     const paginationButtons = document.querySelectorAll(".paginationButton")
@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     paginationButtons.forEach(button => {
-
+    
         button.addEventListener('click', () => {
             page = parseInt(button.innerText)
             changeVisibility()
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let i = 0; i < Accessories.length; i++) {
             Accessories[i].style.display = "block";
         }
-        console.log("hello");
+        
     });
 
     Consolesbutton.addEventListener("click", e => {
